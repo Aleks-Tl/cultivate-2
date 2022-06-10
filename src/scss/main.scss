@@ -2098,10 +2098,10 @@
     line-height: 20px;
     color: var(--primary);
     text-transform: uppercase;
-    -webkit-background-color: transparent;
-    -moz-background-color: transparent;
-    -ms-background-color: transparent;
-    background-color: transparent;
+    -webkit-background-color: var(--whiteColor);
+    -moz-background-color: var(--whiteColor);
+    -ms-background-color: var(--whiteColor);
+    background-color: var(--whiteColor);
     cursor: pointer;
     > option {
       -webkit-background-color: #f7e3d2;

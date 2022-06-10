@@ -11,9 +11,7 @@
   --whiteColor: #ffffff;
 }
 
-/* stylelint-disable */
-/* stylelint-disable */
-/* stylelint-disable */
+/* stylelint-disable */ /* stylelint-disable */ /* stylelint-disable */
 .custom-checkbox__field:checked + .custom-checkbox__content::after {
   opacity: 1;
 }
@@ -28,8 +26,7 @@
   pointer-events: none;
 }
 
-/* stylelint-disable */
-/* stylelint-disable */
+/* stylelint-disable */ /* stylelint-disable */
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/../fonts/Montserrat-Regular.woff2") format("woff2");
@@ -152,8 +149,7 @@ a {
 }
 
 .is-hidden {
-  display: none !important;
-  /* stylelint-disable-line declaration-no-important */
+  display: none !important; /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -2616,10 +2612,10 @@ a {
   line-height: 20px;
   color: var(--primary);
   text-transform: uppercase;
-  -webkit-background-color: transparent;
-  -moz-background-color: transparent;
-  -ms-background-color: transparent;
-  background-color: transparent;
+  -webkit-background-color: var(--whiteColor);
+  -moz-background-color: var(--whiteColor);
+  -ms-background-color: var(--whiteColor);
+  background-color: var(--whiteColor);
   cursor: pointer;
 }
 .filter__select > option {

@@ -3009,6 +3009,8 @@ a {
   .one-class__info {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 992px) {
@@ -3075,6 +3077,13 @@ a {
 .one-class__text {
   font-size: 15px;
   line-height: 22px;
+  max-width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  .one-class__text {
+    max-width: 100%;
+  }
 }
 .one-class .play {
   position: absolute;

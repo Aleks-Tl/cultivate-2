@@ -11,9 +11,7 @@
   --whiteColor: #ffffff;
 }
 
-/* stylelint-disable */
-/* stylelint-disable */
-/* stylelint-disable */
+/* stylelint-disable */ /* stylelint-disable */ /* stylelint-disable */
 .custom-checkbox__field:checked + .custom-checkbox__content::after {
   opacity: 1;
 }
@@ -28,8 +26,7 @@
   pointer-events: none;
 }
 
-/* stylelint-disable */
-/* stylelint-disable */
+/* stylelint-disable */ /* stylelint-disable */
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/../fonts/Montserrat-Regular.woff2") format("woff2");
@@ -152,8 +149,7 @@ a {
 }
 
 .is-hidden {
-  display: none !important;
-  /* stylelint-disable-line declaration-no-important */
+  display: none !important; /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -1120,6 +1116,9 @@ a {
   -ms-flex: 0 1 660px;
   flex: 0 1 660px;
 }
+.perf-class__item:last-child a {
+  display: block;
+}
 @media (max-width: 1400px) {
   .perf-class__item:last-child {
     -webkit-box-flex: 0;
@@ -1319,6 +1318,20 @@ a {
     padding-bottom: 40px;
   }
 }
+.join__wrap {
+  max-width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 1400px) {
+  .join__wrap {
+    max-width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  .join__wrap {
+    max-width: 100%;
+  }
+}
 .join__title {
   text-align: center;
 }
@@ -1340,7 +1353,7 @@ a {
 .join__items:first-child {
   margin-top: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .join__items {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1353,7 +1366,7 @@ a {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 50%;
   flex: 0 1 50%;
-  padding: 60px 30px 50px 60px;
+  padding: 40px 30px;
   background-color: var(--whiteColor);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1402,7 +1415,7 @@ a {
   }
 }
 .join__prices {
-  margin-right: 70px;
+  margin-right: 45px;
 }
 @media (max-width: 1200px) {
   .join__prices {
@@ -3890,10 +3903,12 @@ a {
   }
 }
 .ingredients__wrap {
+  max-width: 85%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 90px;
+  gap: 40px;
 }
 @media (max-width: 1400px) {
   .ingredients__wrap {
@@ -3906,6 +3921,7 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    max-width: 100%;
   }
 }
 .ingredients__left > ul {

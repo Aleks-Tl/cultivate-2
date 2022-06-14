@@ -520,6 +520,37 @@ var swiper = new Swiper(".members__slider", {
     }
   }
 });
+var swiperTeacher = new Swiper(".teacher__slider", {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
+  centeredSlides: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    // when window width is >= 576px
+    576: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    },
+    // when window width is >= 768px
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    }
+  }
+});
 })();
 
 /******/ })()

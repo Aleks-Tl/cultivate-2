@@ -1259,6 +1259,13 @@ a {
   line-height: 25px;
   text-transform: uppercase;
 }
+.teacher__btn {
+  display: block;
+  margin: 30px auto 0 auto;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
 
 .teacher2 {
   padding-bottom: 150px;
@@ -1562,6 +1569,7 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .members__slide {
@@ -1630,7 +1638,7 @@ a {
 }
 
 .info {
-  background-color: #FFE2CB;
+  background-color: #ffe2cb;
 }
 @media (max-width: 768px) {
   .info {
@@ -2034,31 +2042,43 @@ a {
   opacity: 1;
 }
 
-.create, .signin, .contact {
+.create,
+.signin,
+.contact {
   padding-top: 250px;
   padding-bottom: 160px;
   background-color: var(--lightGray);
 }
 @media (max-width: 1200px) {
-  .create, .signin, .contact {
+  .create,
+.signin,
+.contact {
     padding-top: 160px;
   }
 }
 @media (max-width: 992px) {
-  .create, .signin, .contact {
+  .create,
+.signin,
+.contact {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 @media (max-width: 576px) {
-  .create, .signin, .contact {
+  .create,
+.signin,
+.contact {
     padding-bottom: 50px;
   }
 }
-.create h2, .signin h2, .contact h2 {
+.create h2,
+.signin h2,
+.contact h2 {
   margin: 0;
 }
-.create__wrap, .signin__wrap, .contact__wrap {
+.create__wrap,
+.signin__wrap,
+.contact__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2068,28 +2088,38 @@ a {
   gap: 30px;
 }
 @media (max-width: 1200px) {
-  .create__wrap, .signin__wrap, .contact__wrap {
+  .create__wrap,
+.signin__wrap,
+.contact__wrap {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }
-.create__left, .signin__left, .contact__left {
+.create__left,
+.signin__left,
+.contact__left {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 50%;
   flex: 0 1 50%;
 }
 @media (max-width: 1200px) {
-  .create__left, .signin__left, .contact__left {
+  .create__left,
+.signin__left,
+.contact__left {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 100%;
     flex: 0 1 100%;
   }
 }
-.create__form, .signin__form, .contact__form {
+.create__form,
+.signin__form,
+.contact__form {
   width: 545px;
   margin-top: 55px;
 }
-.create__form input, .signin__form input, .contact__form input {
+.create__form input,
+.signin__form input,
+.contact__form input {
   display: block;
   width: 100%;
   outline: none;
@@ -2124,20 +2154,26 @@ a {
   line-height: 30px;
   opacity: 0.5;
 }
-.create__form input::placeholder, .signin__form input::placeholder, .contact__form input::placeholder {
+.create__form input::placeholder,
+.signin__form input::placeholder,
+.contact__form input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   opacity: 0.5;
 }
-.create__form input[type=checkbox], .signin__form input[type=checkbox], .contact__form input[type=checkbox] {
+.create__form input[type=checkbox],
+.signin__form input[type=checkbox],
+.contact__form input[type=checkbox] {
   display: inline;
   width: auto;
   opacity: 1;
   margin: 0;
   margin-right: 5px;
 }
-.create__form input[type=submit], .signin__form input[type=submit], .contact__form input[type=submit] {
+.create__form input[type=submit],
+.signin__form input[type=submit],
+.contact__form input[type=submit] {
   border: 2px solid var(--secondary);
   border-radius: 20px;
   font-weight: 600;
@@ -2149,22 +2185,30 @@ a {
   transition: all 0.3s ease 0s;
   line-height: 30px;
 }
-.create__form input[type=submit]:hover, .signin__form input[type=submit]:hover, .contact__form input[type=submit]:hover {
+.create__form input[type=submit]:hover,
+.signin__form input[type=submit]:hover,
+.contact__form input[type=submit]:hover {
   background-color: var(--secondary);
   color: var(--whiteColor);
 }
 @media (max-width: 1200px) {
-  .create__form input[type=submit], .signin__form input[type=submit], .contact__form input[type=submit] {
+  .create__form input[type=submit],
+.signin__form input[type=submit],
+.contact__form input[type=submit] {
     font-size: 15px;
   }
 }
-.create__form label, .signin__form label, .contact__form label {
+.create__form label,
+.signin__form label,
+.contact__form label {
   font-weight: 600;
   font-size: 12px;
   line-height: 20px;
   text-transform: uppercase;
 }
-.create__form label.custom-checkbox, .signin__form label.custom-checkbox, .contact__form label.custom-checkbox {
+.create__form label.custom-checkbox,
+.signin__form label.custom-checkbox,
+.contact__form label.custom-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2175,122 +2219,170 @@ a {
   font-size: 14px;
   line-height: 20px;
 }
-.create__form label.custom-checkbox a, .signin__form label.custom-checkbox a, .contact__form label.custom-checkbox a {
+.create__form label.custom-checkbox a,
+.signin__form label.custom-checkbox a,
+.contact__form label.custom-checkbox a {
   color: var(--secondary);
   display: block;
   margin-left: 5px;
 }
-.create__form label.custom-checkbox a:hover, .signin__form label.custom-checkbox a:hover, .contact__form label.custom-checkbox a:hover {
+.create__form label.custom-checkbox a:hover,
+.signin__form label.custom-checkbox a:hover,
+.contact__form label.custom-checkbox a:hover {
   text-decoration: underline;
 }
 @media (max-width: 1200px) {
-  .create__form, .signin__form, .contact__form {
+  .create__form,
+.signin__form,
+.contact__form {
     width: 100%;
   }
 }
-.create__btn, .signin__btn, .contact__btn {
+.create__btn,
+.signin__btn,
+.contact__btn {
   display: block;
   width: 100%;
   margin-top: 40px;
   margin-bottom: 30px;
 }
 @media (max-width: 1200px) {
-  .create__btn, .signin__btn, .contact__btn {
+  .create__btn,
+.signin__btn,
+.contact__btn {
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
   }
 }
-.create__link, .signin__link, .contact__link {
+.create__link,
+.signin__link,
+.contact__link {
   font-size: 14px;
   line-height: 20px;
 }
-.create__link a, .signin__link a, .contact__link a {
+.create__link a,
+.signin__link a,
+.contact__link a {
   color: var(--secondary);
 }
-.create__link a:hover, .signin__link a:hover, .contact__link a:hover {
+.create__link a:hover,
+.signin__link a:hover,
+.contact__link a:hover {
   text-decoration: underline;
 }
-.create__right, .signin__right, .contact__right {
+.create__right,
+.signin__right,
+.contact__right {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 50%;
   flex: 0 1 50%;
 }
 @media (max-width: 1200px) {
-  .create__right, .signin__right, .contact__right {
+  .create__right,
+.signin__right,
+.contact__right {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 100%;
     flex: 0 1 100%;
   }
 }
-.create__text, .signin__text, .contact__text {
+.create__text,
+.signin__text,
+.contact__text {
   line-height: 26px;
 }
-.create .join__items, .signin .join__items, .contact .join__items {
+.create .join__items,
+.signin .join__items,
+.contact .join__items {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 @media (max-width: 1200px) {
-  .create .join__items, .signin .join__items, .contact .join__items {
+  .create .join__items,
+.signin .join__items,
+.contact .join__items {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
   }
 }
-.create .join__item, .signin .join__item, .contact .join__item {
+.create .join__item,
+.signin .join__item,
+.contact .join__item {
   padding-top: 40px;
   padding-bottom: 30px;
 }
 @media (max-width: 1200px) {
-  .create .join__item, .signin .join__item, .contact .join__item {
+  .create .join__item,
+.signin .join__item,
+.contact .join__item {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media (max-width: 1200px) {
-  .create .join__prices, .signin .join__prices, .contact .join__prices {
+  .create .join__prices,
+.signin .join__prices,
+.contact .join__prices {
     margin-right: 15px;
   }
 }
 @media (max-width: 992px) {
-  .create .join__prices, .signin .join__prices, .contact .join__prices {
+  .create .join__prices,
+.signin .join__prices,
+.contact .join__prices {
     margin-right: 0;
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {
-  .create .join__list, .signin .join__list, .contact .join__list {
+  .create .join__list,
+.signin .join__list,
+.contact .join__list {
     margin-top: 20px;
   }
 }
-.create .custom-checkbox, .signin .custom-checkbox, .contact .custom-checkbox {
+.create .custom-checkbox,
+.signin .custom-checkbox,
+.contact .custom-checkbox {
   padding-left: 20px;
 }
-.create .custom-checkbox__field, .signin .custom-checkbox__field, .contact .custom-checkbox__field {
+.create .custom-checkbox__field,
+.signin .custom-checkbox__field,
+.contact .custom-checkbox__field {
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
-.create .custom-checkbox__content, .signin .custom-checkbox__content, .contact .custom-checkbox__content {
+.create .custom-checkbox__content,
+.signin .custom-checkbox__content,
+.contact .custom-checkbox__content {
   position: absolute;
   width: 1em;
   height: 1em;
   opacity: 0.5;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #cccccc;
   border-radius: 2px;
   margin-left: -20px;
 }
-.create .custom-checkbox__field:checked + .custom-checkbox__content, .signin .custom-checkbox__field:checked + .custom-checkbox__content, .contact .custom-checkbox__field:checked + .custom-checkbox__content {
+.create .custom-checkbox__field:checked + .custom-checkbox__content,
+.signin .custom-checkbox__field:checked + .custom-checkbox__content,
+.contact .custom-checkbox__field:checked + .custom-checkbox__content {
   background-color: var(--secondary);
 }
-.create input[type=checkbox]:checked + span:after, .signin input[type=checkbox]:checked + span:after, .contact input[type=checkbox]:checked + span:after {
+.create input[type=checkbox]:checked + span:after,
+.signin input[type=checkbox]:checked + span:after,
+.contact input[type=checkbox]:checked + span:after {
   content: "";
   position: absolute;
 }
-.create input[type=checkbox]:checked + span:after, .signin input[type=checkbox]:checked + span:after, .contact input[type=checkbox]:checked + span:after {
+.create input[type=checkbox]:checked + span:after,
+.signin input[type=checkbox]:checked + span:after,
+.contact input[type=checkbox]:checked + span:after {
   left: 1px;
   top: 2px;
   width: 10px;
@@ -2639,11 +2731,18 @@ a {
     padding-bottom: 20px;
   }
 }
+.filter__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .filter__item label {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  float: right;
+  margin-right: 5px;
 }
 @media (max-width: 576px) {
   .filter__item label {
@@ -2655,10 +2754,43 @@ a {
     font-size: 0;
   }
 }
-.filter__select {
+.filter__wr {
   margin-right: 60px;
+  position: relative;
+}
+.filter__wr:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -15px;
+  background-image: url("../img/bird-filter.png");
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 6px;
+}
+@media (max-width: 576px) {
+  .filter__wr:after {
+    background-image: url("../img/bird-filter-sm.png");
+    top: 8px;
+  }
+}
+.filter__wr:last-child {
+  margin-right: 0;
+}
+.filter__wr:last-child:after {
+  right: 0px;
+}
+@media (max-width: 768px) {
+  .filter__wr {
+    margin-right: 30px;
+  }
+}
+.filter__select {
   outline: none;
   border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -2681,11 +2813,6 @@ a {
 .filter__select:last-child {
   margin-right: 0;
 }
-@media (max-width: 768px) {
-  .filter__select {
-    margin-right: 0;
-  }
-}
 @media (max-width: 576px) {
   .filter__select {
     font-size: 11px;
@@ -2706,7 +2833,7 @@ a {
   }
 }
 .filtered span {
-  background: #FFE2CB;
+  background: #ffe2cb;
   border-radius: 10px;
   font-weight: 600;
   font-size: 11px;
@@ -2766,6 +2893,7 @@ a {
   }
 }
 .flex-container__item {
+  color: var(--primary);
   width: calc(33.3333333333% - 30px);
 }
 @media (max-width: 992px) {
@@ -2932,7 +3060,7 @@ a {
 .practice {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #FFE2CB;
+  background-color: #ffe2cb;
 }
 .practice__wrap {
   display: -webkit-box;
@@ -3029,6 +3157,10 @@ a {
   position: relative;
   max-width: 70%;
   margin: 0 auto;
+}
+.one-class__block .recipes-ind__addfavorite {
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 @media (max-width: 992px) {
   .one-class__block {
@@ -4303,7 +4435,7 @@ a {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #C80000;
+  color: #c80000;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -4330,7 +4462,7 @@ a {
   outline: none;
   border: none;
   padding: 11px 11px 11px 0;
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 1px solid #cccccc;
   font-size: 16px;
   margin-bottom: 30px;
   display: -webkit-box;
@@ -4365,7 +4497,8 @@ a {
   line-height: 30px;
   opacity: 0.4;
 }
-.profile__form input[type=submit], .profile__form input[type=reset] {
+.profile__form input[type=submit],
+.profile__form input[type=reset] {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-right: 0;
@@ -4440,7 +4573,7 @@ a {
   margin-bottom: 10px;
 }
 .profile .cancel {
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
 }
 @media (max-width: 992px) {
   .profile {

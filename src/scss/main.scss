@@ -742,18 +742,22 @@
 // SECTION TEACHER
 
 .teacher {
-  padding-bottom: 100px;
+  padding-bottom: 40px;
   @media (max-width: 576px) {
     padding-bottom: 40px;
   }
   // .teacher__wrap
 
   .swiper-wrapper {
+    justify-content: flex-start;
     padding-bottom: 65px;
     padding-top: 15px;
     @media (max-width: 576px) {
       padding-top: 0;
       padding-bottom: 0;
+    }
+    @media (max-width: 400px) {
+      justify-content: flex-start;
     }
   }
 
@@ -775,7 +779,9 @@
     }
   }
 
-  &__wrap {}
+  &__wrap {
+
+  }
 
   // .teacher__title
 
@@ -794,9 +800,10 @@
   }
 
   &__title {
-    @media (max-width: 992px) {
+    text-align: center;
+    /* @media (max-width: 992px) {
       text-align: center;
-    }
+    } */
   }
 
   // .teacher__items

@@ -47,10 +47,10 @@ const swiper = new Swiper(".members__slider", {
 
 
 const swiperTeacher = new Swiper(".teacher__slider", {
-  loop: true,
+  //loop: true,
   slidesPerView: 4,
   spaceBetween: 30,
-  centeredSlides: true,
+  //centeredSlides: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -77,5 +77,18 @@ const swiperTeacher = new Swiper(".teacher__slider", {
     }
   }
 });
+
+
+const sliderTecher = document.querySelector('.teacher__slider');
+
+
+if (sliderTecher.querySelectorAll('.swiper-slide').length <= 4) {
+  sliderTecher.querySelector('.swiper-wrapper').style.justifyContent = 'center';
+} else {
+  sliderTecher.querySelector('.swiper-wrapper').style.justifyContent = 'flex-start';
+}
+
+
+
 
 

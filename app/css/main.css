@@ -11,9 +11,7 @@
   --whiteColor: #ffffff;
 }
 
-/* stylelint-disable */
-/* stylelint-disable */
-/* stylelint-disable */
+/* stylelint-disable */ /* stylelint-disable */ /* stylelint-disable */
 .custom-checkbox__field:checked + .custom-checkbox__content::after {
   opacity: 1;
 }
@@ -28,8 +26,7 @@
   pointer-events: none;
 }
 
-/* stylelint-disable */
-/* stylelint-disable */
+/* stylelint-disable */ /* stylelint-disable */
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/../fonts/Montserrat-Regular.woff2") format("woff2");
@@ -152,8 +149,7 @@ a {
 }
 
 .is-hidden {
-  display: none !important;
-  /* stylelint-disable-line declaration-no-important */
+  display: none !important; /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -1166,7 +1162,7 @@ a {
 }
 
 .teacher {
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 @media (max-width: 576px) {
   .teacher {
@@ -1174,6 +1170,9 @@ a {
   }
 }
 .teacher .swiper-wrapper {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   padding-bottom: 65px;
   padding-top: 15px;
 }
@@ -1181,6 +1180,13 @@ a {
   .teacher .swiper-wrapper {
     padding-top: 0;
     padding-bottom: 0;
+  }
+}
+@media (max-width: 400px) {
+  .teacher .swiper-wrapper {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 }
 .teacher .swiper-pagination-bullet {
@@ -1215,10 +1221,11 @@ a {
     padding: 20px;
   }
 }
-@media (max-width: 992px) {
-  .teacher__title {
+.teacher__title {
+  text-align: center;
+  /* @media (max-width: 992px) {
     text-align: center;
-  }
+  } */
 }
 .teacher__item {
   cursor: pointer;

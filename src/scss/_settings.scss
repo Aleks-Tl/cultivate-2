@@ -141,6 +141,9 @@ a {
   @media (max-width: 1200px) {
     font-size: 15px;
   }
+  @media (max-height: 350px) {
+    line-height: 16px;
+  }
 }
 .btn {
   border: 2px solid var(--secondary);
@@ -158,6 +161,9 @@ a {
   }
   @media (max-width: 1200px) {
     font-size: 15px;
+  }
+  @media (max-height: 350px) {
+    line-height: 16px;
   }
 }
 .burger {

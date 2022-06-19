@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <section class="teacher-page">
+      <div class="teacher-page__head" style="background-image: url('img/teacher-page-bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center top;">
+        <div class="container">
+          <div class="teacher-page__wrap">
+            <div class="teacher-page__img"><img src="img/teacher-img-2.jpg" alt="Teacher image"></div>
+            <div class="teacher-page__descr">
+              <div class="teacher-page__name">Amber Stone</div>
+              <div class="teacher-page__prof">Yoga instructor</div>
+              <ul class="teacher-social">
+                <li class="teacher-social__item"><a href="#" target="_blank"
+                    class="teacher-social__link social__link--fb" aria-label="Facebook"><img
+                      src="img/facebook-footer.svg" alt="Facebook"></a></li>
+                <li class="teacher-social__item"><a href="#" target="_blank"
+                    class="teacher-social__link social__link--tw" aria-label="Twitter"><img src="img/twitter-footer.svg"
+                      alt="Twitter"></a></li>
+                <li class="teacher-social__item"><a href="#" target="_blank"
+                    class="teacher-social__link social__link--in" aria-label="Instagram"><img
+                      src="img/instagram-footer.svg" alt="Instagram"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="teachers-text">
+      <div class="container">
+        <div class="teachers-text__text">
+          Curabitur blandit leo pellentesque, consectetur sapien vitae, posuere lectus. Mauris viverra, nibh eu
+          viverra commodo, sem tortor tincidunt est, at porttitor massa magna malesuada massa. Donec eu mi porttitor
+          libero lobortis congue. Pellentesque bibendum dolor sit amet est interdum scelerisque. Phasellus libero
+          nunc, ultricies in massa et, rhoncus bibendum sem. Morbi purus dui, sagittis et orci ac, luctus feugiat
+          quam. Ut ac odio convallis lectus tincidunt condimentum vitae et metus. Orci varius natoque penatibus et
+          magnis dis parturient montes, nascetur ridiculus mus. Praesent vel consectetur mi, vitae consectetur dolor.
+          Mauris ac scelerisque sem. In facilisis eleifend quam, vitae hendrerit dui iaculis ac. Curabitur elit purus,
+          dictum et risus quis, posuere lacinia tellus. Sed ac fermentum nisi. Aliquam mollis rutrum nisl, sed
+          ultricies urna mollis ut. Praesent aliquet libero sit amet nisl mattis mollis sit amet vitae metus. Aliquam
+          pellentesque nulla orci, et finibus tellus ultrices quis.
+        </div>
+      </div>
+    </section>
+
+    <section class="classes teachers-page">
+      <h2 class="teachers-page__title title">Amber’s Classes</h2>
+      <div class="container">
+        <div class="filter classes__filter">
+          <div class="filter__item">
+            <div class="filter__wr">
+              <select name="duration" class="filter__select" id="select-duration">
+                <option selected>Duration</option>
+                <option value="value1">Value - 1</option>
+                <option value="value2">Value - 2</option>
+                <option value="value3">Value - 3</option>
+              </select>
+            </div>
+            <div class="filter__wr">
+              <select name="intensity" class="filter__select" id="select-intensity">
+                <option selected>Intensity</option>
+                <option value="value1">Value - 1</option>
+                <option value="value2">Value - 2</option>
+                <option value="value3">Value - 3</option>
+              </select>
+            </div>
+            <div class="filter__wr">
+              <select name="style" class="filter__select" id="select-style">
+                <option selected>Style</option>
+                <option value="value1">Value - 1</option>
+                <option value="value2">Value - 2</option>
+                <option value="value3">Value - 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter__item">
+            <label for="select-sort"><span>Sort By:</span></label>
+            <div class="filter__wr">
+              <select name="sort" class="filter__select" id="select-sort">
+                <option value="value1" selected>Newest</option>
+                <option value="value2">Value - 2</option>
+                <option value="value3">Value - 3</option>
+                <option value="value4">Value - 4</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="filtered classes__filtered">
+          <span>0-50 mins &times;</span>
+          <span>Easy Going &times;</span>
+          <span>Yogalates &times;</span>
+        </div>
+        <div class="classes__wrap flex-container">
+          <a href="#" class="flex-container__item">
+            <div class="flex-container__block">
+              <div>
+                <img src="img/classes-img-1.jpg" width="430" height="300" alt="classes-img-1">
+                <img src="img/play.svg" alt="play" class="play">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">EASY GOING</div>
+                  <div class="flex-container__time">2:15</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-container__name">Lorem ipsum dolor</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </a>
+          <a href="#" class="flex-container__item">
+            <div class="flex-container__block">
+              <div>
+                <img src="img/classes-img-2.jpg" width="430" height="300" alt="classes-img-2">
+                <img src="img/play.svg" alt="play" class="play">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">EASY GOING</div>
+                  <div class="flex-container__time">2:15</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-container__name">Proin justo ipsum</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </a>
+          <a href="#" class="flex-container__item">
+            <div class="flex-container__block">
+              <div>
+                <img src="img/classes-img-3.jpg" width="430" height="300" alt="classes-img-3">
+                <img src="img/play.svg" alt="play" class="play">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">EASY GOING</div>
+                  <div class="flex-container__time">2:15</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-container__name">Nulla pellentesque</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </a>
+          <a href="#" class="flex-container__item">
+            <div class="flex-container__block">
+              <div>
+                <img src="img/classes-img-4.jpg" width="430" height="300" alt="classes-img-4">
+                <img src="img/play.svg" alt="play" class="play">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">EASY GOING</div>
+                  <div class="flex-container__time">2:15</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-container__name">Curabitur blandit leo</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </a>
+          <a href="#" class="flex-container__item">
+            <div class="flex-container__block">
+              <div>
+                <img src="img/classes-img-5.jpg" width="430" height="300" alt="classes-img-5">
+                <img src="img/play.svg" alt="play" class="play">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">EASY GOING</div>
+                  <div class="flex-container__time">2:15</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-container__name">Mauris viverra</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="classes teachers-page">
+      <h2 class="teachers-page__title title">Amber’s Series</h2>
+      <div class="container">
+        <div class="filter classes__filter">
+          <div class="filter__item">
+            <div class="filter__wr">
+              <select name="duration" class="filter__select" id="select-duration">
+                <option selected>Duration</option>
+                <option value="value1">Value - 1</option>
+                <option value="value2">Value - 2</option>
+                <option value="value3">Value - 3</option>
+              </select>
+            </div>
+            <div class="filter__wr">
+              <select name="intensity" class="filter__select" id="select-intensity">
+                <option selected>Intensity</option>
+                <option value="value1">Value - 1</option>
+                <option value="value2">Value - 2</option>
+                <option value="value3">Value - 3</option>
+              </select>
+            </div>
+            <div class="filter__wr">
+              <select name="style" class="filter__select" id="select-style">
+                <option selected>Style</option>
+                <option value="value1">Value - 1</option>
+                <option value="value2">Value - 2</option>
+                <option value="value3">Value - 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter__item">
+            <label for="select-sort"><span>Sort By:</span></label>
+            <div class="filter__wr">
+              <select name="sort" class="filter__select" id="select-sort">
+                <option value="value1" selected>Newest</option>
+                <option value="value2">Value - 2</option>
+                <option value="value3">Value - 3</option>
+                <option value="value4">Value - 4</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="filtered classes__filtered">
+          <span>Inversions &times;</span>
+          <span>Moderate &times;</span>
+          <span>Mindfulness &times;</span>
+        </div>
+        <div class="classes__wrap flex-container">
+          <a href="#" class="flex-container__item">
+            <div class="flex-container__block">
+              <div>
+                <img src="img/classes-img-1.jpg" width="430" height="300" alt="classes-img-1">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">MODERATE</div>
+                  <div class="flex-container__time"><img src="img/play-sm.svg" alt="play"> 15</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-container__name">Lorem ipsum dolor</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </a>
+          <a href="#" class="flex-container__item">
+            <div class="flex-container__block">
+              <div>
+                <img src="img/classes-img-2.jpg" width="430" height="300" alt="classes-img-2">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">MODERATE</div>
+                  <div class="flex-container__time"><img src="img/play-sm.svg" alt="play"> 15</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-container__name">Lorem ipsum dolor</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </a>
+          <a href="#" class="flex-container__item">
+            <div class="flex-container__block">
+              <div>
+                <img src="img/classes-img-3.jpg" width="430" height="300" alt="classes-img-3">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">MODERATE</div>
+                  <div class="flex-container__time"><img src="img/play-sm.svg" alt="play"> 15</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-container__name">Lorem ipsum dolor</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </a>
+          <a href="#" class="flex-container__item">
+            <div class="flex-container__block">
+              <div>
+                <img src="img/classes-img-4.jpg" width="430" height="300" alt="classes-img-4">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">MODERATE</div>
+                  <div class="flex-container__time"><img src="img/play-sm.svg" alt="play"> 15</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-container__name">Lorem ipsum dolor</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </a>
+          <a href="#" class="flex-container__item">
+            <div class="flex-container__block">
+              <div>
+                <img src="img/classes-img-5.jpg" width="430" height="300" alt="classes-img-5">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">MODERATE</div>
+                  <div class="flex-container__time"><img src="img/play-sm.svg" alt="play"> 15</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-container__name">Lorem ipsum dolor</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </a>
+          <a href="#" class="flex-container__item">
+            <div class="flex-container__block">
+              <div>
+                <img src="img/classes-img-6.jpg" width="430" height="300" alt="classes-img-6">
+                <div class="flex-container__info">
+                  <div class="flex-container__easy">MODERATE</div>
+                  <div class="flex-container__time"><img src="img/play-sm.svg" alt="play"> 15</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-container__name">Lorem ipsum dolor</div>
+            <div class="flex-container__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in feugiat
+              nisl, porta pellentesque ante. Vestibulum ut massa tempus, consequat lectus.</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    @include('partials/connected.html')
+
+    @include('partials/footer.html')
+  </div>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

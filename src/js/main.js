@@ -81,7 +81,6 @@ const swiperTeacher = new Swiper(".teacher__slider", {
 
 const sliderTecher = document.querySelector('.teacher__slider');
 
-
 if (sliderTecher.querySelectorAll('.swiper-slide').length <= 4) {
   sliderTecher.querySelector('.swiper-wrapper').style.justifyContent = 'center';
 } else {

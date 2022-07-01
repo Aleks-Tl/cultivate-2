@@ -2749,10 +2749,25 @@ a {
     padding-bottom: 20px;
   }
 }
+.filter .filter__wr:nth-child(3) {
+  width: 100px;
+}
+@media (max-width: 576px) {
+  .filter .filter__wr:nth-child(3) {
+    width: 70px;
+  }
+}
 .filter__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.filter__item span {
+  margin-bottom: 4px;
+  display: inline-block;
 }
 .filter__item label {
   font-weight: 600;
@@ -2767,7 +2782,7 @@ a {
     font-size: 11px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .filter__item label {
     font-size: 0;
   }
@@ -2775,40 +2790,44 @@ a {
 .filter__wr {
   margin-right: 60px;
   position: relative;
-}
-.filter__wr:after {
-  content: "";
-  position: absolute;
-  top: 6px;
-  right: -15px;
-  background-image: url("../img/bird-filter.png");
-  background-repeat: no-repeat;
-  width: 10px;
-  height: 6px;
-}
-@media (max-width: 576px) {
-  .filter__wr:after {
-    background-image: url("../img/bird-filter-sm.png");
-    top: 8px;
-  }
+  /* &:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -15px;
+    background-image: url("../img/bird-filter.png");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 6px;
+    @media (max-width: 576px) {
+      background-image: url("../img/bird-filter-sm.png");
+      top: 8px;
+    }
+  } */
 }
 .filter__wr:last-child {
   margin-right: 0;
-}
-.filter__wr:last-child:after {
-  right: 0px;
+  /* &:after {
+    right: 0px;
+  } */
 }
 @media (max-width: 768px) {
   .filter__wr {
     margin-right: 30px;
   }
 }
-.filter__select {
+@media (max-width: 576px) {
+  .filter__wr {
+    margin-right: 5px;
+  }
+}
+.filter select:active, .filter select:focus {
   outline: none;
   border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+}
+.filter__select {
+  outline: none;
+  border: transparent;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -2822,11 +2841,12 @@ a {
   cursor: pointer;
 }
 .filter__select > option {
-  -webkit-background-color: #f7e3d2;
+  /* -webkit-background-color: #f7e3d2;
   -moz-background-color: #f7e3d2;
   -ms-background-color: #f7e3d2;
-  background-color: #f7e3d2;
-  font-weight: 600;
+  background-color: #f7e3d2; */
+  font-weight: 400;
+  padding-right: 0;
 }
 .filter__select:last-child {
   margin-right: 0;
@@ -3773,8 +3793,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .recipes-ind__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -3783,28 +3806,36 @@ a {
   }
 }
 .recipes-ind__wrap > img {
+  max-height: 540px;
   margin-left: -285px;
-  /* @media (max-width: 768px) {
-    display: none;
-  } */
-}
-@media (max-width: 1350px) {
-  .recipes-ind__wrap > img {
+  /* margin-left: -285px; */
+  /* @media (max-width: 1350px) {
     margin-left: -15px;
     height: auto;
     max-width: 50%;
   }
-}
-@media (max-width: 768px) {
-  .recipes-ind__wrap > img {
+  @media (max-width: 768px) {
     max-width: 100%;
+    margin-left: 0;
+  } */
+  /* @media (max-width: 768px) {
+    display: none;
+  } */
+}
+@media (max-width: 1650px) {
+  .recipes-ind__wrap > img {
+    margin-left: -185px;
+  }
+}
+@media (max-width: 1200px) {
+  .recipes-ind__wrap > img {
     margin-left: 0;
   }
 }
 .recipes-ind__item {
   padding: 60px;
 }
-@media (max-width: 1350px) {
+@media (max-width: 1650px) {
   .recipes-ind__item {
     padding: 20px;
   }
@@ -3921,6 +3952,9 @@ a {
   .recipes-ind .cooking__item:last-child {
     margin-bottom: 0;
   }
+}
+.recipes-ind .accordion__control {
+  text-align: left;
 }
 .recipes-ind .accordion__title {
   font-weight: 900;
@@ -4926,6 +4960,61 @@ a {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+}
+
+.choices__inner {
+  background-color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-right: 0;
+  padding-left: 0;
+}
+@media (max-width: 576px) {
+  .choices__inner {
+    font-size: 10px;
+  }
+}
+
+.choices__list--dropdown {
+  outline: none !important;
+  border: none !important;
+}
+
+.choices__list--dropdown, .choices__list[aria-expanded] {
+  width: 100%;
+  word-break: inherit;
+}
+
+.choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable {
+  padding-right: 0;
+}
+
+.choices[data-type*=select-one]::after {
+  right: 2.5px;
+  margin-top: -5.5px;
+}
+@media (max-width: 576px) {
+  .choices[data-type*=select-one]::after {
+    right: 2.5px;
+    margin-top: -7.5px;
+  }
+}
+
+.choices[data-type*=select-one].is-open::after {
+  margin-top: -9.5px;
+}
+@media (max-width: 576px) {
+  .choices[data-type*=select-one].is-open::after {
+    margin-top: -12.5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */

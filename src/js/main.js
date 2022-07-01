@@ -79,15 +79,91 @@ const swiperTeacher = new Swiper(".teacher__slider", {
 });
 
 
+const defaultSelect = () => {
+  const element = document.querySelector('.filter__select');
+  const choices = new Choices(element, {
+    searchEnabled: false,
+    itemSelectText: '',
+
+  });
+}
+
+const defaultSelectOne = () => {
+  const element = document.querySelector('.filter__select_1');
+  const choices = new Choices(element, {
+    searchEnabled: false,
+    itemSelectText: '',
+
+  });
+}
+
+const defaultSelectTwo = () => {
+  const element = document.querySelector('.filter__select_2');
+  const choices = new Choices(element, {
+    searchEnabled: false,
+    itemSelectText: '',
+
+  });
+}
+
+const defaultSelectThree = () => {
+  const element = document.querySelector('.filter__select_3');
+  const choices = new Choices(element, {
+    searchEnabled: false,
+    itemSelectText: '',
+
+  });
+}
+
+const defaultSelectFour = () => {
+  const element = document.querySelector('.filter__select_4');
+  const choices = new Choices(element, {
+    searchEnabled: false,
+    itemSelectText: '',
+
+  });
+}
+
+const defaultSelectFive = () => {
+  const element = document.querySelector('.filter__select_5');
+  const choices = new Choices(element, {
+    searchEnabled: false,
+    itemSelectText: '',
+
+  });
+}
+
+const defaultSelectSix = () => {
+  const element = document.querySelector('.filter__select_6');
+  const choices = new Choices(element, {
+    searchEnabled: false,
+    itemSelectText: '',
+
+  });
+}
+
+const defaultSelectSeven = () => {
+  const element = document.querySelector('.filter__select_7');
+  const choices = new Choices(element, {
+    searchEnabled: false,
+    itemSelectText: '',
+
+  });
+}
+defaultSelect();
+defaultSelectOne();
+defaultSelectTwo();
+defaultSelectThree();
+defaultSelectFour();
+defaultSelectFive();
+defaultSelectSix();
+defaultSelectSeven();
+
+
 const sliderTecher = document.querySelector('.teacher__slider');
 
 if (sliderTecher.querySelectorAll('.swiper-slide').length <= 4) {
   sliderTecher.querySelector('.swiper-wrapper').style.justifyContent = 'center';
 } else {
   sliderTecher.querySelector('.swiper-wrapper').style.justifyContent = 'flex-start';
-}
-
-
-
-
-
+};

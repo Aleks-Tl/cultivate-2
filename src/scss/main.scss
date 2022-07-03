@@ -2143,9 +2143,9 @@
   // .filter__item
 
   .filter__wr:nth-child(3) {
-    width: 100px;
+   min-width: 100px;
     @media (max-width: 576px) {
-      width: 70px;
+      min-width: 70px;
     }
   }
   &__item {

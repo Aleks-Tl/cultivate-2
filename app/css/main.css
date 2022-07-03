@@ -2750,11 +2750,11 @@ a {
   }
 }
 .filter .filter__wr:nth-child(3) {
-  width: 100px;
+  min-width: 100px;
 }
 @media (max-width: 576px) {
   .filter .filter__wr:nth-child(3) {
-    width: 70px;
+    min-width: 70px;
   }
 }
 .filter__item {

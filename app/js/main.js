@@ -4830,7 +4830,9 @@ var defaultSelect = function defaultSelect() {
   var element = document.querySelector('.filter__select');
   var choices = new Choices(element, {
     searchEnabled: false,
-    itemSelectText: ''
+    itemSelectText: '',
+    shouldSort: false,
+    shouldSortItems: false
   });
 };
 
@@ -4838,7 +4840,9 @@ var defaultSelectOne = function defaultSelectOne() {
   var element = document.querySelector('.filter__select_1');
   var choices = new Choices(element, {
     searchEnabled: false,
-    itemSelectText: ''
+    itemSelectText: '',
+    shouldSort: false,
+    shouldSortItems: false
   });
 };
 
@@ -4846,7 +4850,9 @@ var defaultSelectTwo = function defaultSelectTwo() {
   var element = document.querySelector('.filter__select_2');
   var choices = new Choices(element, {
     searchEnabled: false,
-    itemSelectText: ''
+    itemSelectText: '',
+    shouldSort: false,
+    shouldSortItems: false
   });
 };
 
@@ -4854,7 +4860,9 @@ var defaultSelectThree = function defaultSelectThree() {
   var element = document.querySelector('.filter__select_3');
   var choices = new Choices(element, {
     searchEnabled: false,
-    itemSelectText: ''
+    itemSelectText: '',
+    shouldSort: false,
+    shouldSortItems: false
   });
 };
 
@@ -4862,7 +4870,9 @@ var defaultSelectFour = function defaultSelectFour() {
   var element = document.querySelector('.filter__select_4');
   var choices = new Choices(element, {
     searchEnabled: false,
-    itemSelectText: ''
+    itemSelectText: '',
+    shouldSort: false,
+    shouldSortItems: false
   });
 };
 
@@ -4870,7 +4880,9 @@ var defaultSelectFive = function defaultSelectFive() {
   var element = document.querySelector('.filter__select_5');
   var choices = new Choices(element, {
     searchEnabled: false,
-    itemSelectText: ''
+    itemSelectText: '',
+    shouldSort: false,
+    shouldSortItems: false
   });
 };
 
@@ -4878,7 +4890,9 @@ var defaultSelectSix = function defaultSelectSix() {
   var element = document.querySelector('.filter__select_6');
   var choices = new Choices(element, {
     searchEnabled: false,
-    itemSelectText: ''
+    itemSelectText: '',
+    shouldSort: false,
+    shouldSortItems: false
   });
 };
 
@@ -4886,7 +4900,9 @@ var defaultSelectSeven = function defaultSelectSeven() {
   var element = document.querySelector('.filter__select_7');
   var choices = new Choices(element, {
     searchEnabled: false,
-    itemSelectText: ''
+    itemSelectText: '',
+    shouldSort: false,
+    shouldSortItems: false
   });
 };
 

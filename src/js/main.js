@@ -84,7 +84,8 @@ const defaultSelect = () => {
   const choices = new Choices(element, {
     searchEnabled: false,
     itemSelectText: '',
-
+    shouldSort: false,
+    shouldSortItems: false,
   });
 }
 
@@ -93,7 +94,8 @@ const defaultSelectOne = () => {
   const choices = new Choices(element, {
     searchEnabled: false,
     itemSelectText: '',
-
+    shouldSort: false,
+    shouldSortItems: false,
   });
 }
 
@@ -102,7 +104,8 @@ const defaultSelectTwo = () => {
   const choices = new Choices(element, {
     searchEnabled: false,
     itemSelectText: '',
-
+    shouldSort: false,
+    shouldSortItems: false,
   });
 }
 
@@ -111,7 +114,8 @@ const defaultSelectThree = () => {
   const choices = new Choices(element, {
     searchEnabled: false,
     itemSelectText: '',
-
+    shouldSort: false,
+    shouldSortItems: false,
   });
 }
 
@@ -120,7 +124,8 @@ const defaultSelectFour = () => {
   const choices = new Choices(element, {
     searchEnabled: false,
     itemSelectText: '',
-
+    shouldSort: false,
+    shouldSortItems: false,
   });
 }
 
@@ -129,7 +134,8 @@ const defaultSelectFive = () => {
   const choices = new Choices(element, {
     searchEnabled: false,
     itemSelectText: '',
-
+    shouldSort: false,
+    shouldSortItems: false,
   });
 }
 
@@ -138,7 +144,8 @@ const defaultSelectSix = () => {
   const choices = new Choices(element, {
     searchEnabled: false,
     itemSelectText: '',
-
+    shouldSort: false,
+    shouldSortItems: false,
   });
 }
 
@@ -147,7 +154,8 @@ const defaultSelectSeven = () => {
   const choices = new Choices(element, {
     searchEnabled: false,
     itemSelectText: '',
-
+    shouldSort: false,
+    shouldSortItems: false,
   });
 }
 defaultSelect();

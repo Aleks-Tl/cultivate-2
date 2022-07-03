@@ -2142,10 +2142,10 @@
   }
   // .filter__item
 
-  .filter__wr:nth-child(3) {
+  .filter__wr {
    min-width: 100px;
     @media (max-width: 576px) {
-      min-width: 70px;
+      min-width: 65px;
     }
   }
   &__item {
@@ -4136,7 +4136,10 @@
   padding-right: 0;
   padding-left: 0;
   @media (max-width: 576px) {
-    font-size: 10px;
+    font-size: 12px;
+  }
+  @media(max-width: 400px) {
+    font-size: 9px;
   }
 }
 .choices__list--dropdown {
@@ -4170,6 +4173,9 @@
 
 .choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
   @media(max-width: 576px) {
-    font-size: 10px;
+    font-size: 12px;
+  }
+  @media(max-width: 400px) {
+    font-size: 9px;
   }
 }

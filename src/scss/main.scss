@@ -60,6 +60,10 @@
     }
     .header-profile__profile {
       color: var(--whiteColor);
+      &:after {
+        content: "";
+        border: 2px solid var(--whiteColor);
+      }
     }
   }
 }

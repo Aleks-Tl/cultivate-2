@@ -144,37 +144,10 @@
 
     @include('partials/connected.html')
 
-    @include('partials/footer.html')
+
   </div>
-  <script>
-    const accordions = document.querySelectorAll('.accordion__list');
+  @include('partials/footer.html')
 
-    accordions.forEach(el => {
-      el.addEventListener('click', (e) => {
-
-        const self = e.currentTarget;
-
-        const control = self.querySelector('.accordion__content'),
-          icon = self.querySelector('.accordion__icon')
-
-        control.classList.toggle('open');
-        icon.classList.toggle('open');
-
-
-        if (control.classList.contains('open')) {
-          control.style.maxHeight = control.scrollHeight + 'px';
-        } else {
-          control.style.maxHeight = null;
-        }
-
-
-      });
-    });
-
-  </script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-  <script src="js/main.js"></script>
 </body>
 
 </html>

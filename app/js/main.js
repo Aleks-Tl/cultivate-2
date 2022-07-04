@@ -4824,105 +4824,227 @@ var swiperTeacher = new Swiper(".teacher__slider", {
       spaceBetween: 30
     }
   }
-});
+}); // Input mask for credit card
 
-var defaultSelect = function defaultSelect() {
-  var element = document.querySelector('.filter__select');
-  var choices = new Choices(element, {
-    searchEnabled: false,
-    itemSelectText: '',
-    shouldSort: false,
-    shouldSortItems: false
+if (document.querySelectorAll('.cc-number-input').length > 0) {
+  var ccNumberInput = document.querySelector('.cc-number-input'),
+      ccNumberPattern = /^\d{0,16}$/g,
+      ccNumberSeparator = " ",
+      ccNumberInputOldValue,
+      ccNumberInputOldCursor,
+      ccExpiryInput = document.querySelector('.cc-expiry-input'),
+      ccExpiryPattern = /^\d{0,4}$/g,
+      ccExpirySeparator = "/",
+      ccExpiryInputOldValue,
+      ccExpiryInputOldCursor,
+      ccCVCInput = document.querySelector('.cc-cvc-input'),
+      ccCVCPattern = /^\d{0,3}$/g,
+      mask = function mask(value, limit, separator) {
+    var output = [];
+
+    for (var _i = 0; _i < value.length; _i++) {
+      if (_i !== 0 && _i % limit === 0) {
+        output.push(separator);
+      }
+
+      output.push(value[_i]);
+    }
+
+    return output.join("");
+  },
+      unmask = function unmask(value) {
+    return value.replace(/[^\d]/g, '');
+  },
+      checkSeparator = function checkSeparator(position, interval) {
+    return Math.floor(position / (interval + 1));
+  },
+      ccNumberInputKeyDownHandler = function ccNumberInputKeyDownHandler(e) {
+    var el = e.target;
+    ccNumberInputOldValue = el.value;
+    ccNumberInputOldCursor = el.selectionEnd;
+  },
+      ccNumberInputInputHandler = function ccNumberInputInputHandler(e) {
+    var el = e.target,
+        newValue = unmask(el.value),
+        newCursorPosition;
+
+    if (newValue.match(ccNumberPattern)) {
+      newValue = mask(newValue, 4, ccNumberSeparator);
+      newCursorPosition = ccNumberInputOldCursor - checkSeparator(ccNumberInputOldCursor, 4) + checkSeparator(ccNumberInputOldCursor + (newValue.length - ccNumberInputOldValue.length), 4) + (unmask(newValue).length - unmask(ccNumberInputOldValue).length);
+      el.value = newValue !== "" ? newValue : "";
+    } else {
+      el.value = ccNumberInputOldValue;
+      newCursorPosition = ccNumberInputOldCursor;
+    }
+
+    el.setSelectionRange(newCursorPosition, newCursorPosition);
+    highlightCC(el.value);
+  },
+      highlightCC = function highlightCC(ccValue) {
+    var ccCardType = '',
+        ccCardTypePatterns = {
+      amex: /^3/,
+      visa: /^4/,
+      mastercard: /^5/,
+      disc: /^6/,
+      genric: /(^1|^2|^7|^8|^9|^0)/
+    };
+
+    for (var cardType in ccCardTypePatterns) {
+      if (ccCardTypePatterns[cardType].test(ccValue)) {
+        ccCardType = cardType;
+        break;
+      }
+    }
+
+    var activeCC = document.querySelector('.cc-types__img--active'),
+        newActiveCC = document.querySelector(".cc-types__img--".concat(ccCardType));
+    if (activeCC) activeCC.classList.remove('cc-types__img--active');
+    if (newActiveCC) newActiveCC.classList.add('cc-types__img--active');
+  },
+      ccExpiryInputKeyDownHandler = function ccExpiryInputKeyDownHandler(e) {
+    var el = e.target;
+    ccExpiryInputOldValue = el.value;
+    ccExpiryInputOldCursor = el.selectionEnd;
+  },
+      ccExpiryInputInputHandler = function ccExpiryInputInputHandler(e) {
+    var el = e.target,
+        newValue = el.value;
+    newValue = unmask(newValue);
+
+    if (newValue.match(ccExpiryPattern)) {
+      newValue = mask(newValue, 2, ccExpirySeparator);
+      el.value = newValue;
+    } else {
+      el.value = ccExpiryInputOldValue;
+    }
+  };
+
+  ccNumberInput.addEventListener('keydown', ccNumberInputKeyDownHandler);
+  ccNumberInput.addEventListener('input', ccNumberInputInputHandler);
+  ccExpiryInput.addEventListener('keydown', ccExpiryInputKeyDownHandler);
+  ccExpiryInput.addEventListener('input', ccExpiryInputInputHandler);
+} // Open Submenu
+
+
+if (document.querySelectorAll('.header-profile__prof').length > 0) {
+  var userName = document.querySelector('.header-profile__prof'),
+      submenu = document.querySelector('.header-profile__list');
+  userName.addEventListener('click', function () {
+    submenu.classList.toggle('open');
+    userName.classList.toggle('open');
   });
-};
+} // Tabs
 
-var defaultSelectOne = function defaultSelectOne() {
-  var element = document.querySelector('.filter__select_1');
-  var choices = new Choices(element, {
-    searchEnabled: false,
-    itemSelectText: '',
-    shouldSort: false,
-    shouldSortItems: false
+
+if (document.querySelectorAll('.tabs__header').length > 0) {
+  var tabs = document.querySelectorAll('.tabs__header'),
+      tabsItem = document.querySelectorAll('.tabs__item'),
+      tabsInfo = document.querySelectorAll('.tabs__info'); //tabs.addEventListener('click', fTabs);
+
+  for (var _i2 = 0; tabs.length > _i2; _i2++) {
+    tabs[_i2].addEventListener('click', fTabs);
+  }
+
+  function fTabs(event) {
+    if (event.target.className == "tabs__item") {
+      //let dataTab = event.target.getAttribute('data-tab');
+      var currentDataTab = event.target.dataset.tab; //console.log(currentDataTab);
+
+      for (var _i3 = 0; _i3 < tabsItem.length; _i3++) {
+        tabsItem[_i3].classList.remove('active');
+      }
+
+      event.target.classList.add('active');
+
+      for (var _i4 = 0; _i4 < tabsInfo.length; _i4++) {
+        if (currentDataTab == _i4) {
+          tabsInfo[_i4].classList.add('active');
+        } else {
+          tabsInfo[_i4].classList.remove('active');
+        }
+      }
+    }
+  }
+} // Accodrion ind recipes
+
+
+if (document.querySelectorAll('.accordion__list').length > 0) {
+  var accordions = document.querySelectorAll('.accordion__list');
+  accordions.forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      var self = e.currentTarget;
+      var control = self.querySelector('.accordion__content'),
+          icon = self.querySelector('.accordion__icon');
+      control.classList.toggle('open');
+      icon.classList.toggle('open');
+
+      if (control.classList.contains('open')) {
+        control.style.maxHeight = control.scrollHeight + 'px';
+      } else {
+        control.style.maxHeight = null;
+      }
+    });
   });
-};
+} // Choices select
 
-var defaultSelectTwo = function defaultSelectTwo() {
-  var element = document.querySelector('.filter__select_2');
-  var choices = new Choices(element, {
-    searchEnabled: false,
-    itemSelectText: '',
-    shouldSort: false,
-    shouldSortItems: false
-  });
-};
 
-var defaultSelectThree = function defaultSelectThree() {
-  var element = document.querySelector('.filter__select_3');
-  var choices = new Choices(element, {
-    searchEnabled: false,
-    itemSelectText: '',
-    shouldSort: false,
-    shouldSortItems: false
-  });
-};
+if (document.querySelectorAll('.filter__select').length > 0) {
+  var defaultSelect = function defaultSelect() {
+    var element = document.querySelectorAll('.filter__select');
+    element.forEach(function (el) {
+      var choices = new Choices(el, {
+        searchEnabled: false,
+        itemSelectText: '',
+        shouldSort: false,
+        shouldSortItems: false
+      });
+    });
+  };
 
-var defaultSelectFour = function defaultSelectFour() {
-  var element = document.querySelector('.filter__select_4');
-  var choices = new Choices(element, {
-    searchEnabled: false,
-    itemSelectText: '',
-    shouldSort: false,
-    shouldSortItems: false
-  });
-};
-
-var defaultSelectFive = function defaultSelectFive() {
-  var element = document.querySelector('.filter__select_5');
-  var choices = new Choices(element, {
-    searchEnabled: false,
-    itemSelectText: '',
-    shouldSort: false,
-    shouldSortItems: false
-  });
-};
-
-var defaultSelectSix = function defaultSelectSix() {
-  var element = document.querySelector('.filter__select_6');
-  var choices = new Choices(element, {
-    searchEnabled: false,
-    itemSelectText: '',
-    shouldSort: false,
-    shouldSortItems: false
-  });
-};
-
-var defaultSelectSeven = function defaultSelectSeven() {
-  var element = document.querySelector('.filter__select_7');
-  var choices = new Choices(element, {
-    searchEnabled: false,
-    itemSelectText: '',
-    shouldSort: false,
-    shouldSortItems: false
-  });
-};
-
-defaultSelect();
-defaultSelectOne();
-defaultSelectTwo();
-defaultSelectThree();
-defaultSelectFour();
-defaultSelectFive();
-defaultSelectSix();
-defaultSelectSeven();
-var sliderTecher = document.querySelector('.teacher__slider');
-
-if (sliderTecher.querySelectorAll('.swiper-slide').length <= 4) {
-  sliderTecher.querySelector('.swiper-wrapper').style.justifyContent = 'center';
-} else {
-  sliderTecher.querySelector('.swiper-wrapper').style.justifyContent = 'flex-start';
+  defaultSelect();
 }
 
-;
+if (document.querySelectorAll('.teacher__slider').length > 0) {
+  if (document.querySelectorAll('.teacher__slider .swiper-slide').length <= 4) {
+    document.querySelector('.teacher__slider .swiper-wrapper').style.justifyContent = 'center';
+  } else {
+    document.querySelector('.teacher__slider .swiper-wrapper').style.justifyContent = 'flex-start';
+  }
+} // Filter
+
+
+if (document.querySelectorAll('.box').length > 0) {
+  var i;
+
+  (function () {
+    var filterBox = document.querySelectorAll('.box');
+    document.querySelector('.nav-filter').addEventListener('click', function (event) {
+      if (event.target.tagName !== 'LI') return false;
+      var filterClass = event.target.dataset['f'];
+      filterBox.forEach(function (elem) {
+        elem.classList.remove('hide');
+
+        if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
+          elem.classList.add('hide');
+        }
+      });
+    });
+    var btnContainer = document.querySelector('.nav-list-filter');
+    var items = btnContainer.querySelectorAll('li');
+
+    for (i = 0; i < items.length; i++) {
+      items[i].addEventListener("click", function (e) {
+        if (!e.target.classList.contains('active')) {
+          items.forEach(function (elem) {
+            elem.classList.remove('active');
+          });
+          e.target.classList.add('active');
+        } else {}
+      });
+    }
+  })();
+}
 })();
 
 /******/ })()

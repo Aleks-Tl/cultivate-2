@@ -396,6 +396,10 @@ a {
 .white-theme .header .header-profile__profile {
   color: var(--whiteColor);
 }
+.white-theme .header .header-profile__profile:after {
+  content: "";
+  border: 2px solid var(--whiteColor);
+}
 
 .header {
   padding: 30px 0;

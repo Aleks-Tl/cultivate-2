@@ -651,6 +651,9 @@ a {
     padding-bottom: 15px;
   }
 }
+.header .header-profile__profile {
+  color: var(--whiteColor);
+}
 
 .header-profile__prof {
   margin-left: 60px;

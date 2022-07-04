@@ -15,6 +15,8 @@ function scrollFunction() {
   }
 }
 
+
+
 // Swiper for home page
 
 const swiper = new Swiper(".members__slider", {
@@ -158,6 +160,7 @@ const defaultSelectSeven = () => {
     shouldSortItems: false,
   });
 }
+
 defaultSelect();
 defaultSelectOne();
 defaultSelectTwo();
@@ -175,3 +178,5 @@ if (sliderTecher.querySelectorAll('.swiper-slide').length <= 4) {
 } else {
   sliderTecher.querySelector('.swiper-wrapper').style.justifyContent = 'flex-start';
 };
+
+

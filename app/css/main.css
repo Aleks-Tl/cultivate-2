@@ -393,6 +393,9 @@ a {
 .white-theme .header.backgroundWhite {
   background-color: rgba(0, 0, 0, 0.7);
 }
+.white-theme .header .header-profile__profile {
+  color: var(--whiteColor);
+}
 
 .header {
   padding: 30px 0;
@@ -650,9 +653,6 @@ a {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-}
-.header .header-profile__profile {
-  color: var(--whiteColor);
 }
 
 .header-profile__prof {

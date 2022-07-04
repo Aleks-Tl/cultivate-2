@@ -58,6 +58,9 @@
     &.backgroundWhite {
       background-color: rgba(0, 0, 0, 0.7);
     }
+    .header-profile__profile {
+      color: var(--whiteColor);
+    }
   }
 }
 .header {
@@ -274,9 +277,6 @@
   @media (max-width: 992px) {
     padding-top: 15px;
     padding-bottom: 15px;
-  }
-  .header-profile__profile {
-    color: var(--whiteColor);
   }
 }
 

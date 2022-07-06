@@ -1249,8 +1249,8 @@ a {
 }
 .teacher__img {
   overflow: hidden;
-  width: 315px;
-  height: 315px;
+  max-width: 315px;
+  height: auto;
 }
 @media (max-width: 576px) {
   .teacher__img {
@@ -2670,7 +2670,7 @@ a {
     padding-top: 80px;
   }
 }
-.terms h2 {
+.terms h1 {
   text-align: center;
   margin-bottom: 85px;
   font-weight: 900;
@@ -2680,18 +2680,18 @@ a {
   color: var(--primary);
 }
 @media (max-width: 992px) {
-  .terms h2 {
+  .terms h1 {
     margin-bottom: 40px;
   }
 }
 @media (max-width: 768px) {
-  .terms h2 {
+  .terms h1 {
     font-size: 35px;
     line-height: 40px;
   }
 }
 @media (max-width: 768px) {
-  .terms h2 {
+  .terms h1 {
     margin-bottom: 25px;
     font-size: 25px;
     line-height: 30px;

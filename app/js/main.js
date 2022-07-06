@@ -71,11 +71,11 @@ __webpack_require__.r(__webpack_exports__);
 (function () {
   var _document, _document2;
 
-  var burger = (_document = document) === null || _document === void 0 ? void 0 : _document.querySelector('[data-burger]');
-  var menu = (_document2 = document) === null || _document2 === void 0 ? void 0 : _document2.querySelector('[data-menu]');
-  var btns = document.querySelector('.header__btns');
-  var body = document.querySelector('body');
-  burger === null || burger === void 0 ? void 0 : burger.addEventListener('click', function (e) {
+  const burger = (_document = document) === null || _document === void 0 ? void 0 : _document.querySelector('[data-burger]');
+  const menu = (_document2 = document) === null || _document2 === void 0 ? void 0 : _document2.querySelector('[data-menu]');
+  const btns = document.querySelector('.header__btns');
+  const body = document.querySelector('body');
+  burger === null || burger === void 0 ? void 0 : burger.addEventListener('click', e => {
     burger === null || burger === void 0 ? void 0 : burger.classList.toggle('burger--active');
     menu === null || menu === void 0 ? void 0 : menu.classList.toggle('menu--active');
     btns === null || btns === void 0 ? void 0 : btns.classList.toggle('active');
@@ -91,52 +91,12 @@ __webpack_require__.r(__webpack_exports__);
   \**************************************/
 /***/ (() => {
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-
 /*! For license information please see choices.min.js.LICENSE.txt */
 !function () {
   "use strict";
 
   var e = {
-    282: function _(e, t, i) {
+    282: function (e, t, i) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       }), t.clearChoices = t.activateChoices = t.filterChoices = t.addChoice = void 0;
@@ -179,7 +139,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         };
       };
     },
-    783: function _(e, t, i) {
+    783: function (e, t, i) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       }), t.addGroup = void 0;
@@ -199,7 +159,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         };
       };
     },
-    464: function _(e, t, i) {
+    464: function (e, t, i) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       }), t.highlightItem = t.removeItem = t.addItem = void 0;
@@ -238,7 +198,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         };
       };
     },
-    137: function _(e, t, i) {
+    137: function (e, t, i) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       }), t.setIsLoading = t.resetTo = t.clearAll = void 0;
@@ -259,11 +219,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         };
       };
     },
-    373: function _(e, t, i) {
+    373: function (e, t, i) {
       var n = this && this.__spreadArray || function (e, t, i) {
-        if (i || 2 === arguments.length) for (var n, s = 0, r = t.length; s < r; s++) {
-          !n && s in t || (n || (n = Array.prototype.slice.call(t, 0, s)), n[s] = t[s]);
-        }
+        if (i || 2 === arguments.length) for (var n, s = 0, r = t.length; s < r; s++) !n && s in t || (n || (n = Array.prototype.slice.call(t, 0, s)), n[s] = t[s]);
         return e.concat(n || Array.prototype.slice.call(t));
       },
           s = this && this.__importDefault || function (e) {
@@ -295,7 +253,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         function e(t, i) {
           var s = this;
           void 0 === t && (t = "[data-choice]"), void 0 === i && (i = {}), void 0 === i.allowHTML && console.warn("Deprecation warning: allowHTML will default to false in a future release. To render HTML in Choices, you will need to set it to true. Setting allowHTML will suppress this message."), this.config = r.default.all([p.DEFAULT_CONFIG, e.defaults.options, i], {
-            arrayMerge: function arrayMerge(e, t) {
+            arrayMerge: function (e, t) {
               return n([], t, !0);
             }
           });
@@ -316,7 +274,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           }) : this.passedElement = new u.WrappedSelect({
             element: a,
             classNames: this.config.classNames,
-            template: function template(e) {
+            template: function (e) {
               return s._templates.option(e);
             }
           }), this.initialised = !1, this._store = new v.default(), this._initialState = m.defaultState, this._currentState = m.defaultState, this._prevState = m.defaultState, this._currentValue = "", this._canSearch = !!this.config.searchEnabled, this._isScrollingOnIe = !1, this._highlightPosition = 0, this._wasTap = !0, this._placeholderValue = this._generatePlaceholderValue(), this._baseId = (0, f.generateId)(this.passedElement.element, "choices-"), this._direction = this.passedElement.dir, !this._direction) {
@@ -347,7 +305,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         }
 
         return Object.defineProperty(e, "defaults", {
-          get: function get() {
+          get: function () {
             return Object.preventExtensions({
               get options() {
                 return y;
@@ -486,7 +444,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             }).then(function () {
               return s;
             });
-            if (!Array.isArray(r)) throw new TypeError(".setChoices first argument function must return either array of choices or Promise, got: ".concat(_typeof(r)));
+            if (!Array.isArray(r)) throw new TypeError(".setChoices first argument function must return either array of choices or Promise, got: ".concat(typeof r));
             return this.setChoices(r, t, i, !1);
           }
 
@@ -585,7 +543,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
               a = r.searchResultLimit,
               c = r.renderChoiceLimit,
               l = this._isSearching ? f.sortByScore : this.config.sorter,
-              h = function h(e) {
+              h = function (e) {
             if ("auto" !== o || s._isSelectOneElement || !e.selected) {
               var i = s._getTemplate("choice", e, s.config.itemSelectText);
 
@@ -610,9 +568,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
               g = this._isSelectOneElement ? n(n([], p, !0), m, !0) : m;
           this._isSearching ? v = a : c && c > 0 && !i && (v = c);
 
-          for (var _ = 0; _ < v; _ += 1) {
-            g[_] && h(g[_]);
-          }
+          for (var _ = 0; _ < v; _ += 1) g[_] && h(g[_]);
 
           return t;
         }, e.prototype._createItemsFragment = function (e, t) {
@@ -1073,9 +1029,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             disabled: i.disabled
           }));
         }, e.prototype._getTemplate = function (e) {
-          for (var t, i = [], s = 1; s < arguments.length; s++) {
-            i[s - 1] = arguments[s];
-          }
+          for (var t, i = [], s = 1; s < arguments.length; s++) i[s - 1] = arguments[s];
 
           return (t = this._templates[e]).call.apply(t, n([this, this.config], i, !1));
         }, e.prototype._createTemplates = function () {
@@ -1168,7 +1122,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         }, e.prototype._addPredefinedItems = function (e) {
           var t = this;
           e.forEach(function (e) {
-            "object" == _typeof(e) && e.value && t._addItem({
+            "object" == typeof e && e.value && t._addItem({
               value: e.value,
               label: e.label,
               choiceId: e.id,
@@ -1181,7 +1135,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         }, e.prototype._setChoiceOrItem = function (e) {
           var t = this;
           ({
-            object: function object() {
+            object: function () {
               e.value && (t._isTextElement ? t._addItem({
                 value: e.value,
                 label: e.label,
@@ -1197,7 +1151,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
                 placeholder: e.placeholder
               }));
             },
-            string: function string() {
+            string: function () {
               t._isTextElement ? t._addItem({
                 value: e
               }) : t._addChoice({
@@ -1245,7 +1199,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
       t.default = E;
     },
-    613: function _(e, t, i) {
+    613: function (e, t, i) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
@@ -1304,7 +1258,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
       t.default = r;
     },
-    217: function _(e, t) {
+    217: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
@@ -1318,7 +1272,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         }
 
         return Object.defineProperty(e.prototype, "distanceFromTopWindow", {
-          get: function get() {
+          get: function () {
             return this.element.getBoundingClientRect().bottom;
           },
           enumerable: !1,
@@ -1334,7 +1288,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
       t.default = i;
     },
-    520: function _(e, t, i) {
+    520: function (e, t, i) {
       var n = this && this.__importDefault || function (e) {
         return e && e.__esModule ? e : {
           default: e
@@ -1357,7 +1311,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       var l = n(i(982));
       t.WrappedSelect = l.default;
     },
-    11: function _(e, t, i) {
+    11: function (e, t, i) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
@@ -1374,22 +1328,22 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         }
 
         return Object.defineProperty(e.prototype, "placeholder", {
-          set: function set(e) {
+          set: function (e) {
             this.element.placeholder = e;
           },
           enumerable: !1,
           configurable: !0
         }), Object.defineProperty(e.prototype, "value", {
-          get: function get() {
+          get: function () {
             return (0, n.sanitise)(this.element.value);
           },
-          set: function set(e) {
+          set: function (e) {
             this.element.value = e;
           },
           enumerable: !1,
           configurable: !0
         }), Object.defineProperty(e.prototype, "rawValue", {
-          get: function get() {
+          get: function () {
             return this.element.value;
           },
           enumerable: !1,
@@ -1437,7 +1391,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
       t.default = r;
     },
-    624: function _(e, t, i) {
+    624: function (e, t, i) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
@@ -1493,7 +1447,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
       t.default = s;
     },
-    730: function _(e, t, i) {
+    730: function (e, t, i) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
@@ -1508,22 +1462,22 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         }
 
         return Object.defineProperty(e.prototype, "isActive", {
-          get: function get() {
+          get: function () {
             return "active" === this.element.dataset.choice;
           },
           enumerable: !1,
           configurable: !0
         }), Object.defineProperty(e.prototype, "dir", {
-          get: function get() {
+          get: function () {
             return this.element.dir;
           },
           enumerable: !1,
           configurable: !0
         }), Object.defineProperty(e.prototype, "value", {
-          get: function get() {
+          get: function () {
             return this.element.value;
           },
-          set: function set(e) {
+          set: function (e) {
             this.element.value = e;
           },
           enumerable: !1,
@@ -1547,18 +1501,16 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
       t.default = s;
     },
-    541: function _(e, t, i) {
-      var _n,
-          s = this && this.__extends || (_n = function n(e, t) {
-        return _n = Object.setPrototypeOf || {
+    541: function (e, t, i) {
+      var n,
+          s = this && this.__extends || (n = function (e, t) {
+        return n = Object.setPrototypeOf || {
           __proto__: []
         } instanceof Array && function (e, t) {
           e.__proto__ = t;
         } || function (e, t) {
-          for (var i in t) {
-            Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
-          }
-        }, _n(e, t);
+          for (var i in t) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
+        }, n(e, t);
       }, function (e, t) {
         if ("function" != typeof t && null !== t) throw new TypeError("Class extends value " + String(t) + " is not a constructor or null");
 
@@ -1566,7 +1518,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           this.constructor = e;
         }
 
-        _n(e, t), e.prototype = null === t ? Object.create(t) : (i.prototype = t.prototype, new i());
+        n(e, t), e.prototype = null === t ? Object.create(t) : (i.prototype = t.prototype, new i());
       }),
           r = this && this.__importDefault || function (e) {
         return e && e.__esModule ? e : {
@@ -1591,10 +1543,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         }
 
         return s(t, e), Object.defineProperty(t.prototype, "value", {
-          get: function get() {
+          get: function () {
             return this.element.value;
           },
-          set: function set(e) {
+          set: function (e) {
             this.element.setAttribute("value", e), this.element.value = e;
           },
           enumerable: !1,
@@ -1604,18 +1556,16 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
       t.default = o;
     },
-    982: function _(e, t, i) {
-      var _n2,
-          s = this && this.__extends || (_n2 = function n(e, t) {
-        return _n2 = Object.setPrototypeOf || {
+    982: function (e, t, i) {
+      var n,
+          s = this && this.__extends || (n = function (e, t) {
+        return n = Object.setPrototypeOf || {
           __proto__: []
         } instanceof Array && function (e, t) {
           e.__proto__ = t;
         } || function (e, t) {
-          for (var i in t) {
-            Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
-          }
-        }, _n2(e, t);
+          for (var i in t) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
+        }, n(e, t);
       }, function (e, t) {
         if ("function" != typeof t && null !== t) throw new TypeError("Class extends value " + String(t) + " is not a constructor or null");
 
@@ -1623,7 +1573,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           this.constructor = e;
         }
 
-        _n2(e, t), e.prototype = null === t ? Object.create(t) : (i.prototype = t.prototype, new i());
+        n(e, t), e.prototype = null === t ? Object.create(t) : (i.prototype = t.prototype, new i());
       }),
           r = this && this.__importDefault || function (e) {
         return e && e.__esModule ? e : {
@@ -1648,22 +1598,22 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         }
 
         return s(t, e), Object.defineProperty(t.prototype, "placeholderOption", {
-          get: function get() {
+          get: function () {
             return this.element.querySelector('option[value=""]') || this.element.querySelector("option[placeholder]");
           },
           enumerable: !1,
           configurable: !0
         }), Object.defineProperty(t.prototype, "optionGroups", {
-          get: function get() {
+          get: function () {
             return Array.from(this.element.getElementsByTagName("OPTGROUP"));
           },
           enumerable: !1,
           configurable: !0
         }), Object.defineProperty(t.prototype, "options", {
-          get: function get() {
+          get: function () {
             return Array.from(this.element.options);
           },
-          set: function set(e) {
+          set: function (e) {
             var t = this,
                 i = document.createDocumentFragment();
             e.forEach(function (e) {
@@ -1680,7 +1630,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
       t.default = o;
     },
-    883: function _(e, t) {
+    883: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       }), t.SCROLLING_SPEED = t.SELECT_MULTIPLE_TYPE = t.SELECT_ONE_TYPE = t.TEXT_TYPE = t.KEY_CODES = t.ACTION_TYPES = t.EVENTS = void 0, t.EVENTS = {
@@ -1718,7 +1668,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         PAGE_DOWN_KEY: 34
       }, t.TEXT_TYPE = "text", t.SELECT_ONE_TYPE = "select-one", t.SELECT_MULTIPLE_TYPE = "select-multiple", t.SCROLLING_SPEED = 4;
     },
-    789: function _(e, t, i) {
+    789: function (e, t, i) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       }), t.DEFAULT_CONFIG = t.DEFAULT_CLASSNAMES = void 0;
@@ -1787,13 +1737,13 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         itemSelectText: "Press to select",
         uniqueItemText: "Only unique values can be added",
         customAddItemText: "Only values matching specific conditions can be added",
-        addItemText: function addItemText(e) {
+        addItemText: function (e) {
           return 'Press Enter to add <b>"'.concat((0, n.sanitise)(e), '"</b>');
         },
-        maxItemText: function maxItemText(e) {
+        maxItemText: function (e) {
           return "Only ".concat(e, " values can be added");
         },
-        valueComparer: function valueComparer(e, t) {
+        valueComparer: function (e, t) {
           return e === t;
         },
         fuseOptions: {
@@ -1805,41 +1755,41 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         classNames: t.DEFAULT_CLASSNAMES
       };
     },
-    18: function _(e, t) {
+    18: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
     },
-    978: function _(e, t) {
+    978: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
     },
-    948: function _(e, t) {
+    948: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
     },
-    359: function _(e, t) {
+    359: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
     },
-    285: function _(e, t) {
+    285: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
     },
-    533: function _(e, t) {
+    533: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
     },
-    187: function _(e, t, i) {
+    187: function (e, t, i) {
       var n = this && this.__createBinding || (Object.create ? function (e, t, i, n) {
         void 0 === n && (n = i), Object.defineProperty(e, n, {
           enumerable: !0,
-          get: function get() {
+          get: function () {
             return t[i];
           }
         });
@@ -1847,61 +1797,59 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         void 0 === n && (n = i), e[n] = t[i];
       }),
           s = this && this.__exportStar || function (e, t) {
-        for (var i in e) {
-          "default" === i || Object.prototype.hasOwnProperty.call(t, i) || n(t, e, i);
-        }
+        for (var i in e) "default" === i || Object.prototype.hasOwnProperty.call(t, i) || n(t, e, i);
       };
 
       Object.defineProperty(t, "__esModule", {
         value: !0
       }), s(i(18), t), s(i(978), t), s(i(948), t), s(i(359), t), s(i(285), t), s(i(533), t), s(i(287), t), s(i(132), t), s(i(837), t), s(i(598), t), s(i(369), t), s(i(37), t), s(i(47), t), s(i(923), t), s(i(876), t);
     },
-    287: function _(e, t) {
+    287: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
     },
-    132: function _(e, t) {
+    132: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
     },
-    837: function _(e, t) {
+    837: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
     },
-    598: function _(e, t) {
+    598: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
     },
-    37: function _(e, t) {
+    37: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
     },
-    369: function _(e, t) {
+    369: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
     },
-    47: function _(e, t) {
+    47: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
     },
-    923: function _(e, t) {
+    923: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
     },
-    876: function _(e, t) {
+    876: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
     },
-    799: function _(e, t) {
+    799: function (e, t) {
       var i;
       Object.defineProperty(t, "__esModule", {
         value: !0
@@ -1939,9 +1887,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         var t = e.trim();
         i.innerHTML = t;
 
-        for (var n = i.children[0]; i.firstChild;) {
-          i.removeChild(i.firstChild);
-        }
+        for (var n = i.children[0]; i.firstChild;) i.removeChild(i.firstChild);
 
         return n;
       }), t.sortByAlpha = function (e, t) {
@@ -1983,11 +1929,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         });
       };
     },
-    273: function _(e, t) {
+    273: function (e, t) {
       var i = this && this.__spreadArray || function (e, t, i) {
-        if (i || 2 === arguments.length) for (var n, s = 0, r = t.length; s < r; s++) {
-          !n && s in t || (n || (n = Array.prototype.slice.call(t, 0, s)), n[s] = t[s]);
-        }
+        if (i || 2 === arguments.length) for (var n, s = 0, r = t.length; s < r; s++) !n && s in t || (n || (n = Array.prototype.slice.call(t, 0, s)), n[s] = t[s]);
         return e.concat(n || Array.prototype.slice.call(t));
       };
 
@@ -2052,11 +1996,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         }
       };
     },
-    871: function _(e, t) {
+    871: function (e, t) {
       var i = this && this.__spreadArray || function (e, t, i) {
-        if (i || 2 === arguments.length) for (var n, s = 0, r = t.length; s < r; s++) {
-          !n && s in t || (n || (n = Array.prototype.slice.call(t, 0, s)), n[s] = t[s]);
-        }
+        if (i || 2 === arguments.length) for (var n, s = 0, r = t.length; s < r; s++) !n && s in t || (n || (n = Array.prototype.slice.call(t, 0, s)), n[s] = t[s]);
         return e.concat(n || Array.prototype.slice.call(t));
       };
 
@@ -2081,7 +2023,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         }
       };
     },
-    655: function _(e, t, i) {
+    655: function (e, t, i) {
       var n = this && this.__importDefault || function (e) {
         return e && e.__esModule ? e : {
           default: e
@@ -2116,11 +2058,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         return h(n, i);
       };
     },
-    52: function _(e, t) {
+    52: function (e, t) {
       var i = this && this.__spreadArray || function (e, t, i) {
-        if (i || 2 === arguments.length) for (var n, s = 0, r = t.length; s < r; s++) {
-          !n && s in t || (n || (n = Array.prototype.slice.call(t, 0, s)), n[s] = t[s]);
-        }
+        if (i || 2 === arguments.length) for (var n, s = 0, r = t.length; s < r; s++) !n && s in t || (n || (n = Array.prototype.slice.call(t, 0, s)), n[s] = t[s]);
         return e.concat(n || Array.prototype.slice.call(t));
       };
 
@@ -2164,18 +2104,16 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         }
       };
     },
-    502: function _(e, t) {
+    502: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       }), t.defaultState = void 0, t.defaultState = !1, t.default = function (e, i) {
         return void 0 === e && (e = t.defaultState), void 0 === i && (i = {}), "SET_IS_LOADING" === i.type ? i.isLoading : e;
       };
     },
-    744: function _(e, t, i) {
+    744: function (e, t, i) {
       var n = this && this.__spreadArray || function (e, t, i) {
-        if (i || 2 === arguments.length) for (var n, s = 0, r = t.length; s < r; s++) {
-          !n && s in t || (n || (n = Array.prototype.slice.call(t, 0, s)), n[s] = t[s]);
-        }
+        if (i || 2 === arguments.length) for (var n, s = 0, r = t.length; s < r; s++) !n && s in t || (n || (n = Array.prototype.slice.call(t, 0, s)), n[s] = t[s]);
         return e.concat(n || Array.prototype.slice.call(t));
       },
           s = this && this.__importDefault || function (e) {
@@ -2200,19 +2138,19 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         }, e.prototype.dispatch = function (e) {
           this._store.dispatch(e);
         }, Object.defineProperty(e.prototype, "state", {
-          get: function get() {
+          get: function () {
             return this._store.getState();
           },
           enumerable: !1,
           configurable: !0
         }), Object.defineProperty(e.prototype, "items", {
-          get: function get() {
+          get: function () {
             return this.state.items;
           },
           enumerable: !1,
           configurable: !0
         }), Object.defineProperty(e.prototype, "activeItems", {
-          get: function get() {
+          get: function () {
             return this.items.filter(function (e) {
               return !0 === e.active;
             });
@@ -2220,7 +2158,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           enumerable: !1,
           configurable: !0
         }), Object.defineProperty(e.prototype, "highlightedActiveItems", {
-          get: function get() {
+          get: function () {
             return this.items.filter(function (e) {
               return e.active && e.highlighted;
             });
@@ -2228,13 +2166,13 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           enumerable: !1,
           configurable: !0
         }), Object.defineProperty(e.prototype, "choices", {
-          get: function get() {
+          get: function () {
             return this.state.choices;
           },
           enumerable: !1,
           configurable: !0
         }), Object.defineProperty(e.prototype, "activeChoices", {
-          get: function get() {
+          get: function () {
             return this.choices.filter(function (e) {
               return !0 === e.active;
             });
@@ -2242,7 +2180,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           enumerable: !1,
           configurable: !0
         }), Object.defineProperty(e.prototype, "selectableChoices", {
-          get: function get() {
+          get: function () {
             return this.choices.filter(function (e) {
               return !0 !== e.disabled;
             });
@@ -2250,7 +2188,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           enumerable: !1,
           configurable: !0
         }), Object.defineProperty(e.prototype, "searchableChoices", {
-          get: function get() {
+          get: function () {
             return this.selectableChoices.filter(function (e) {
               return !0 !== e.placeholder;
             });
@@ -2258,7 +2196,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           enumerable: !1,
           configurable: !0
         }), Object.defineProperty(e.prototype, "placeholderChoice", {
-          get: function get() {
+          get: function () {
             return n([], this.choices, !0).reverse().find(function (e) {
               return !0 === e.placeholder;
             });
@@ -2266,13 +2204,13 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           enumerable: !1,
           configurable: !0
         }), Object.defineProperty(e.prototype, "groups", {
-          get: function get() {
+          get: function () {
             return this.state.groups;
           },
           enumerable: !1,
           configurable: !0
         }), Object.defineProperty(e.prototype, "activeGroups", {
-          get: function get() {
+          get: function () {
             var e = this.groups,
                 t = this.choices;
             return e.filter(function (e) {
@@ -2300,25 +2238,25 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
       t.default = a;
     },
-    686: function _(e, t) {
+    686: function (e, t) {
       Object.defineProperty(t, "__esModule", {
         value: !0
       });
       var i = {
-        containerOuter: function containerOuter(e, t, i, n, s, r, o) {
+        containerOuter: function (e, t, i, n, s, r, o) {
           var a = e.classNames.containerOuter,
               c = Object.assign(document.createElement("div"), {
             className: a
           });
           return c.dataset.type = r, t && (c.dir = t), n && (c.tabIndex = 0), i && (c.setAttribute("role", s ? "combobox" : "listbox"), s && c.setAttribute("aria-autocomplete", "list")), c.setAttribute("aria-haspopup", "true"), c.setAttribute("aria-expanded", "false"), o && c.setAttribute("aria-labeledby", o), c;
         },
-        containerInner: function containerInner(e) {
+        containerInner: function (e) {
           var t = e.classNames.containerInner;
           return Object.assign(document.createElement("div"), {
             className: t
           });
         },
-        itemList: function itemList(e, t) {
+        itemList: function (e, t) {
           var i = e.classNames,
               n = i.list,
               s = i.listSingle,
@@ -2327,7 +2265,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             className: "".concat(n, " ").concat(t ? s : r)
           });
         },
-        placeholder: function placeholder(e, t) {
+        placeholder: function (e, t) {
           var i,
               n = e.allowHTML,
               s = e.classNames.placeholder;
@@ -2335,7 +2273,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             className: s
           })[n ? "innerHTML" : "innerText"] = t, i));
         },
-        item: function item(e, t, i) {
+        item: function (e, t, i) {
           var n,
               s,
               r = e.allowHTML,
@@ -2374,14 +2312,14 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
           return E;
         },
-        choiceList: function choiceList(e, t) {
+        choiceList: function (e, t) {
           var i = e.classNames.list,
               n = Object.assign(document.createElement("div"), {
             className: i
           });
           return t || n.setAttribute("aria-multiselectable", "true"), n.setAttribute("role", "listbox"), n;
         },
-        choiceGroup: function choiceGroup(e, t) {
+        choiceGroup: function (e, t) {
           var i,
               n = e.allowHTML,
               s = e.classNames,
@@ -2402,7 +2340,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             className: o
           })[n ? "innerHTML" : "innerText"] = l, i))), u;
         },
-        choice: function choice(e, t, i) {
+        choice: function (e, t, i) {
           var n,
               s = e.allowHTML,
               r = e.classNames,
@@ -2430,7 +2368,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             selectText: i
           }), g ? (E.classList.add(h), E.dataset.choiceDisabled = "", E.setAttribute("aria-disabled", "true")) : (E.classList.add(c), E.dataset.choiceSelectable = ""), E;
         },
-        input: function input(e, t) {
+        input: function (e, t) {
           var i = e.classNames,
               n = i.input,
               s = i.inputCloned,
@@ -2444,14 +2382,14 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           });
           return r.setAttribute("role", "textbox"), r.setAttribute("aria-autocomplete", "list"), r.setAttribute("aria-label", t), r;
         },
-        dropdown: function dropdown(e) {
+        dropdown: function (e) {
           var t = e.classNames,
               i = t.list,
               n = t.listDropdown,
               s = document.createElement("div");
           return s.classList.add(i, n), s.setAttribute("aria-expanded", "false"), s;
         },
-        notice: function notice(e, t, i) {
+        notice: function (e, t, i) {
           var n,
               s = e.allowHTML,
               r = e.classNames,
@@ -2463,7 +2401,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           var h = [o, a];
           return "no-choices" === i ? h.push(l) : "no-results" === i && h.push(c), Object.assign(document.createElement("div"), ((n = {})[s ? "innerHTML" : "innerText"] = t, n.className = h.join(" "), n));
         },
-        option: function option(e) {
+        option: function (e) {
           var t = e.label,
               i = e.value,
               n = e.customProperties,
@@ -2475,10 +2413,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       };
       t.default = i;
     },
-    996: function _(e) {
-      var t = function t(e) {
+    996: function (e) {
+      var t = function (e) {
         return function (e) {
-          return !!e && "object" == _typeof(e);
+          return !!e && "object" == typeof e;
         }(e) && !function (e) {
           var t = Object.prototype.toString.call(e);
           return "[object RegExp]" === t || "[object Date]" === t || function (e) {
@@ -2544,7 +2482,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       var c = a;
       e.exports = c;
     },
-    221: function _(e, t, i) {
+    221: function (e, t, i) {
       function n(e) {
         return Array.isArray ? Array.isArray(e) : "[object Array]" === l(e);
       }
@@ -2558,7 +2496,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       }
 
       function o(e) {
-        return "object" == _typeof(e);
+        return "object" == typeof e;
       }
 
       function a(e) {
@@ -2574,60 +2512,48 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       }
 
       i.r(t), i.d(t, {
-        default: function _default() {
+        default: function () {
           return R;
         }
       });
-      var h = Object.prototype.hasOwnProperty;
+      const h = Object.prototype.hasOwnProperty;
 
-      var u = /*#__PURE__*/function () {
-        function u(e) {
-          var _this = this;
-
-          _classCallCheck(this, u);
-
+      class u {
+        constructor(e) {
           this._keys = [], this._keyMap = {};
-          var t = 0;
-          e.forEach(function (e) {
-            var i = d(e);
-            t += i.weight, _this._keys.push(i), _this._keyMap[i.id] = i, t += i.weight;
-          }), this._keys.forEach(function (e) {
+          let t = 0;
+          e.forEach(e => {
+            let i = d(e);
+            t += i.weight, this._keys.push(i), this._keyMap[i.id] = i, t += i.weight;
+          }), this._keys.forEach(e => {
             e.weight /= t;
           });
         }
 
-        _createClass(u, [{
-          key: "get",
-          value: function get(e) {
-            return this._keyMap[e];
-          }
-        }, {
-          key: "keys",
-          value: function keys() {
-            return this._keys;
-          }
-        }, {
-          key: "toJSON",
-          value: function toJSON() {
-            return JSON.stringify(this._keys);
-          }
-        }]);
+        get(e) {
+          return this._keyMap[e];
+        }
 
-        return u;
-      }();
+        keys() {
+          return this._keys;
+        }
+
+        toJSON() {
+          return JSON.stringify(this._keys);
+        }
+
+      }
 
       function d(e) {
-        var t = null,
+        let t = null,
             i = null,
             r = null,
             o = 1;
         if (s(e) || n(e)) r = e, t = p(e), i = f(e);else {
           if (!h.call(e, "name")) throw new Error("Missing name property in key");
-          var _n3 = e.name;
-          if (r = _n3, h.call(e, "weight") && (o = e.weight, o <= 0)) throw new Error(function (e) {
-            return "Property 'weight' in key '".concat(e, "' must be a positive integer");
-          }(_n3));
-          t = p(_n3), i = f(_n3);
+          const n = e.name;
+          if (r = n, h.call(e, "weight") && (o = e.weight, o <= 0)) throw new Error((e => "Property 'weight' in key '".concat(e, "' must be a positive integer"))(n));
+          t = p(n), i = f(n);
         }
         return {
           path: t,
@@ -2650,9 +2576,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         includeScore: !1,
         keys: [],
         shouldSort: !0,
-        sortFn: function sortFn(e, t) {
-          return e.score === t.score ? e.idx < t.idx ? -1 : 1 : e.score < t.score ? -1 : 1;
-        },
+        sortFn: (e, t) => e.score === t.score ? e.idx < t.idx ? -1 : 1 : e.score < t.score ? -1 : 1,
         includeMatches: !1,
         findAllMatches: !1,
         minMatchCharLength: 1,
@@ -2660,31 +2584,29 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         threshold: .6,
         distance: 100,
         useExtendedSearch: !1,
-        getFn: function getFn(e, t) {
-          var i = [],
+        getFn: function (e, t) {
+          let i = [],
               c = !1;
 
-          var h = function h(e, t, u) {
+          const h = (e, t, u) => {
             if (a(e)) if (t[u]) {
-              var _d = e[t[u]];
-              if (!a(_d)) return;
-              if (u === t.length - 1 && (s(_d) || r(_d) || function (e) {
+              const d = e[t[u]];
+              if (!a(d)) return;
+              if (u === t.length - 1 && (s(d) || r(d) || function (e) {
                 return !0 === e || !1 === e || function (e) {
                   return o(e) && null !== e;
                 }(e) && "[object Boolean]" == l(e);
-              }(_d))) i.push(function (e) {
+              }(d))) i.push(function (e) {
                 return null == e ? "" : function (e) {
                   if ("string" == typeof e) return e;
-                  var t = e + "";
+                  let t = e + "";
                   return "0" == t && 1 / e == -1 / 0 ? "-0" : t;
                 }(e);
-              }(_d));else if (n(_d)) {
+              }(d));else if (n(d)) {
                 c = !0;
 
-                for (var _e = 0, _i = _d.length; _e < _i; _e += 1) {
-                  h(_d[_e], t, u + 1);
-                }
-              } else t.length && h(_d, t, u + 1);
+                for (let e = 0, i = d.length; e < i; e += 1) h(d[e], t, u + 1);
+              } else t.length && h(d, t, u + 1);
             } else i.push(e);
           };
 
@@ -2694,179 +2616,150 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         ignoreFieldNorm: !1,
         fieldNormWeight: 1
       };
-      var v = /[^ ]+/g;
+      const v = /[^ ]+/g;
 
-      var g = /*#__PURE__*/function () {
-        function g() {
-          var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-              _ref$getFn = _ref.getFn,
-              e = _ref$getFn === void 0 ? m.getFn : _ref$getFn,
-              _ref$fieldNormWeight = _ref.fieldNormWeight,
-              t = _ref$fieldNormWeight === void 0 ? m.fieldNormWeight : _ref$fieldNormWeight;
-
-          _classCallCheck(this, g);
-
+      class g {
+        constructor() {
+          let {
+            getFn: e = m.getFn,
+            fieldNormWeight: t = m.fieldNormWeight
+          } = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
           this.norm = function () {
-            var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-            var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3;
-            var i = new Map(),
-                n = Math.pow(10, t);
+            let e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+            let t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3;
+            const i = new Map(),
+                  n = Math.pow(10, t);
             return {
-              get: function get(t) {
-                var s = t.match(v).length;
+              get(t) {
+                const s = t.match(v).length;
                 if (i.has(s)) return i.get(s);
-                var r = 1 / Math.pow(s, .5 * e),
-                    o = parseFloat(Math.round(r * n) / n);
+                const r = 1 / Math.pow(s, .5 * e),
+                      o = parseFloat(Math.round(r * n) / n);
                 return i.set(s, o), o;
               },
-              clear: function clear() {
+
+              clear() {
                 i.clear();
               }
+
             };
           }(t, 3), this.getFn = e, this.isCreated = !1, this.setIndexRecords();
         }
 
-        _createClass(g, [{
-          key: "setSources",
-          value: function setSources() {
-            var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-            this.docs = e;
-          }
-        }, {
-          key: "setIndexRecords",
-          value: function setIndexRecords() {
-            var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-            this.records = e;
-          }
-        }, {
-          key: "setKeys",
-          value: function setKeys() {
-            var _this2 = this;
+        setSources() {
+          let e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+          this.docs = e;
+        }
 
-            var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-            this.keys = e, this._keysMap = {}, e.forEach(function (e, t) {
-              _this2._keysMap[e.id] = t;
-            });
-          }
-        }, {
-          key: "create",
-          value: function create() {
-            var _this3 = this;
+        setIndexRecords() {
+          let e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+          this.records = e;
+        }
 
-            !this.isCreated && this.docs.length && (this.isCreated = !0, s(this.docs[0]) ? this.docs.forEach(function (e, t) {
-              _this3._addString(e, t);
-            }) : this.docs.forEach(function (e, t) {
-              _this3._addObject(e, t);
-            }), this.norm.clear());
-          }
-        }, {
-          key: "add",
-          value: function add(e) {
-            var t = this.size();
-            s(e) ? this._addString(e, t) : this._addObject(e, t);
-          }
-        }, {
-          key: "removeAt",
-          value: function removeAt(e) {
-            this.records.splice(e, 1);
+        setKeys() {
+          let e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+          this.keys = e, this._keysMap = {}, e.forEach((e, t) => {
+            this._keysMap[e.id] = t;
+          });
+        }
 
-            for (var _t = e, _i2 = this.size(); _t < _i2; _t += 1) {
-              this.records[_t].i -= 1;
-            }
-          }
-        }, {
-          key: "getValueForItemAtKeyId",
-          value: function getValueForItemAtKeyId(e, t) {
-            return e[this._keysMap[t]];
-          }
-        }, {
-          key: "size",
-          value: function size() {
-            return this.records.length;
-          }
-        }, {
-          key: "_addString",
-          value: function _addString(e, t) {
-            if (!a(e) || c(e)) return;
-            var i = {
-              v: e,
-              i: t,
-              n: this.norm.get(e)
-            };
-            this.records.push(i);
-          }
-        }, {
-          key: "_addObject",
-          value: function _addObject(e, t) {
-            var _this4 = this;
+        create() {
+          !this.isCreated && this.docs.length && (this.isCreated = !0, s(this.docs[0]) ? this.docs.forEach((e, t) => {
+            this._addString(e, t);
+          }) : this.docs.forEach((e, t) => {
+            this._addObject(e, t);
+          }), this.norm.clear());
+        }
 
-            var i = {
-              i: t,
-              $: {}
-            };
-            this.keys.forEach(function (t, r) {
-              var o = _this4.getFn(e, t.path);
+        add(e) {
+          const t = this.size();
+          s(e) ? this._addString(e, t) : this._addObject(e, t);
+        }
 
-              if (a(o)) if (n(o)) {
-                (function () {
-                  var e = [];
-                  var t = [{
-                    nestedArrIndex: -1,
-                    value: o
-                  }];
+        removeAt(e) {
+          this.records.splice(e, 1);
 
-                  for (; t.length;) {
-                    var _t$pop = t.pop(),
-                        _i3 = _t$pop.nestedArrIndex,
-                        _r = _t$pop.value;
+          for (let t = e, i = this.size(); t < i; t += 1) this.records[t].i -= 1;
+        }
 
-                    if (a(_r)) if (s(_r) && !c(_r)) {
-                      var _t2 = {
-                        v: _r,
-                        i: _i3,
-                        n: _this4.norm.get(_r)
-                      };
-                      e.push(_t2);
-                    } else n(_r) && _r.forEach(function (e, i) {
-                      t.push({
-                        nestedArrIndex: i,
-                        value: e
-                      });
-                    });
-                  }
+        getValueForItemAtKeyId(e, t) {
+          return e[this._keysMap[t]];
+        }
 
-                  i.$[r] = e;
-                })();
-              } else if (!c(o)) {
-                var _e2 = {
-                  v: o,
-                  n: _this4.norm.get(o)
-                };
-                i.$[r] = _e2;
+        size() {
+          return this.records.length;
+        }
+
+        _addString(e, t) {
+          if (!a(e) || c(e)) return;
+          let i = {
+            v: e,
+            i: t,
+            n: this.norm.get(e)
+          };
+          this.records.push(i);
+        }
+
+        _addObject(e, t) {
+          let i = {
+            i: t,
+            $: {}
+          };
+          this.keys.forEach((t, r) => {
+            let o = this.getFn(e, t.path);
+            if (a(o)) if (n(o)) {
+              let e = [];
+              const t = [{
+                nestedArrIndex: -1,
+                value: o
+              }];
+
+              for (; t.length;) {
+                const {
+                  nestedArrIndex: i,
+                  value: r
+                } = t.pop();
+                if (a(r)) if (s(r) && !c(r)) {
+                  let t = {
+                    v: r,
+                    i: i,
+                    n: this.norm.get(r)
+                  };
+                  e.push(t);
+                } else n(r) && r.forEach((e, i) => {
+                  t.push({
+                    nestedArrIndex: i,
+                    value: e
+                  });
+                });
               }
-            }), this.records.push(i);
-          }
-        }, {
-          key: "toJSON",
-          value: function toJSON() {
-            return {
-              keys: this.keys,
-              records: this.records
-            };
-          }
-        }]);
 
-        return g;
-      }();
+              i.$[r] = e;
+            } else if (!c(o)) {
+              let e = {
+                v: o,
+                n: this.norm.get(o)
+              };
+              i.$[r] = e;
+            }
+          }), this.records.push(i);
+        }
+
+        toJSON() {
+          return {
+            keys: this.keys,
+            records: this.records
+          };
+        }
+
+      }
 
       function _(e, t) {
-        var _ref2 = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {},
-            _ref2$getFn = _ref2.getFn,
-            i = _ref2$getFn === void 0 ? m.getFn : _ref2$getFn,
-            _ref2$fieldNormWeight = _ref2.fieldNormWeight,
-            n = _ref2$fieldNormWeight === void 0 ? m.fieldNormWeight : _ref2$fieldNormWeight;
-
-        var s = new g({
+        let {
+          getFn: i = m.getFn,
+          fieldNormWeight: n = m.fieldNormWeight
+        } = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+        const s = new g({
           getFn: i,
           fieldNormWeight: n
         });
@@ -2874,62 +2767,44 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       }
 
       function y(e) {
-        var _ref3 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-            _ref3$errors = _ref3.errors,
-            t = _ref3$errors === void 0 ? 0 : _ref3$errors,
-            _ref3$currentLocation = _ref3.currentLocation,
-            i = _ref3$currentLocation === void 0 ? 0 : _ref3$currentLocation,
-            _ref3$expectedLocatio = _ref3.expectedLocation,
-            n = _ref3$expectedLocatio === void 0 ? 0 : _ref3$expectedLocatio,
-            _ref3$distance = _ref3.distance,
-            s = _ref3$distance === void 0 ? m.distance : _ref3$distance,
-            _ref3$ignoreLocation = _ref3.ignoreLocation,
-            r = _ref3$ignoreLocation === void 0 ? m.ignoreLocation : _ref3$ignoreLocation;
-
-        var o = t / e.length;
+        let {
+          errors: t = 0,
+          currentLocation: i = 0,
+          expectedLocation: n = 0,
+          distance: s = m.distance,
+          ignoreLocation: r = m.ignoreLocation
+        } = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+        const o = t / e.length;
         if (r) return o;
-        var a = Math.abs(n - i);
+        const a = Math.abs(n - i);
         return s ? o + a / s : a ? 1 : o;
       }
 
-      var E = 32;
+      const E = 32;
 
       function b(e) {
-        var t = {};
+        let t = {};
 
-        for (var _i4 = 0, _n4 = e.length; _i4 < _n4; _i4 += 1) {
-          var _s = e.charAt(_i4);
-
-          t[_s] = (t[_s] || 0) | 1 << _n4 - _i4 - 1;
+        for (let i = 0, n = e.length; i < n; i += 1) {
+          const s = e.charAt(i);
+          t[s] = (t[s] || 0) | 1 << n - i - 1;
         }
 
         return t;
       }
 
-      var S = /*#__PURE__*/function () {
-        function S(e) {
-          var _this5 = this;
-
-          var _ref4 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-              _ref4$location = _ref4.location,
-              t = _ref4$location === void 0 ? m.location : _ref4$location,
-              _ref4$threshold = _ref4.threshold,
-              i = _ref4$threshold === void 0 ? m.threshold : _ref4$threshold,
-              _ref4$distance = _ref4.distance,
-              n = _ref4$distance === void 0 ? m.distance : _ref4$distance,
-              _ref4$includeMatches = _ref4.includeMatches,
-              s = _ref4$includeMatches === void 0 ? m.includeMatches : _ref4$includeMatches,
-              _ref4$findAllMatches = _ref4.findAllMatches,
-              r = _ref4$findAllMatches === void 0 ? m.findAllMatches : _ref4$findAllMatches,
-              _ref4$minMatchCharLen = _ref4.minMatchCharLength,
-              o = _ref4$minMatchCharLen === void 0 ? m.minMatchCharLength : _ref4$minMatchCharLen,
-              _ref4$isCaseSensitive = _ref4.isCaseSensitive,
-              a = _ref4$isCaseSensitive === void 0 ? m.isCaseSensitive : _ref4$isCaseSensitive,
-              _ref4$ignoreLocation = _ref4.ignoreLocation,
-              c = _ref4$ignoreLocation === void 0 ? m.ignoreLocation : _ref4$ignoreLocation;
-
-          _classCallCheck(this, S);
-
+      class S {
+        constructor(e) {
+          let {
+            location: t = m.location,
+            threshold: i = m.threshold,
+            distance: n = m.distance,
+            includeMatches: s = m.includeMatches,
+            findAllMatches: r = m.findAllMatches,
+            minMatchCharLength: o = m.minMatchCharLength,
+            isCaseSensitive: a = m.isCaseSensitive,
+            ignoreLocation: c = m.ignoreLocation
+          } = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
           if (this.options = {
             location: t,
             threshold: i,
@@ -2941,273 +2816,235 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             ignoreLocation: c
           }, this.pattern = a ? e : e.toLowerCase(), this.chunks = [], !this.pattern.length) return;
 
-          var l = function l(e, t) {
-            _this5.chunks.push({
+          const l = (e, t) => {
+            this.chunks.push({
               pattern: e,
               alphabet: b(e),
               startIndex: t
             });
           },
-              h = this.pattern.length;
+                h = this.pattern.length;
 
           if (h > E) {
-            var _e3 = 0;
+            let e = 0;
+            const t = h % E,
+                  i = h - t;
 
-            var _t3 = h % E,
-                _i5 = h - _t3;
+            for (; e < i;) l(this.pattern.substr(e, E), e), e += E;
 
-            for (; _e3 < _i5;) {
-              l(this.pattern.substr(_e3, E), _e3), _e3 += E;
-            }
-
-            if (_t3) {
-              var _e4 = h - E;
-
-              l(this.pattern.substr(_e4), _e4);
+            if (t) {
+              const e = h - E;
+              l(this.pattern.substr(e), e);
             }
           } else l(this.pattern, 0);
         }
 
-        _createClass(S, [{
-          key: "searchIn",
-          value: function searchIn(e) {
-            var _this$options = this.options,
-                t = _this$options.isCaseSensitive,
-                i = _this$options.includeMatches;
+        searchIn(e) {
+          const {
+            isCaseSensitive: t,
+            includeMatches: i
+          } = this.options;
 
-            if (t || (e = e.toLowerCase()), this.pattern === e) {
-              var _t4 = {
-                isMatch: !0,
-                score: 0
-              };
-              return i && (_t4.indices = [[0, e.length - 1]]), _t4;
-            }
+          if (t || (e = e.toLowerCase()), this.pattern === e) {
+            let t = {
+              isMatch: !0,
+              score: 0
+            };
+            return i && (t.indices = [[0, e.length - 1]]), t;
+          }
 
-            var _this$options2 = this.options,
-                n = _this$options2.location,
-                s = _this$options2.distance,
-                r = _this$options2.threshold,
-                o = _this$options2.findAllMatches,
-                a = _this$options2.minMatchCharLength,
-                c = _this$options2.ignoreLocation;
-            var l = [],
-                h = 0,
-                u = !1;
-            this.chunks.forEach(function (_ref5) {
-              var t = _ref5.pattern,
-                  d = _ref5.alphabet,
-                  p = _ref5.startIndex;
+          const {
+            location: n,
+            distance: s,
+            threshold: r,
+            findAllMatches: o,
+            minMatchCharLength: a,
+            ignoreLocation: c
+          } = this.options;
+          let l = [],
+              h = 0,
+              u = !1;
+          this.chunks.forEach(_ref => {
+            let {
+              pattern: t,
+              alphabet: d,
+              startIndex: p
+            } = _ref;
 
-              var _ref6 = function (e, t, i) {
-                var _ref7 = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {},
-                    _ref7$location = _ref7.location,
-                    n = _ref7$location === void 0 ? m.location : _ref7$location,
-                    _ref7$distance = _ref7.distance,
-                    s = _ref7$distance === void 0 ? m.distance : _ref7$distance,
-                    _ref7$threshold = _ref7.threshold,
-                    r = _ref7$threshold === void 0 ? m.threshold : _ref7$threshold,
-                    _ref7$findAllMatches = _ref7.findAllMatches,
-                    o = _ref7$findAllMatches === void 0 ? m.findAllMatches : _ref7$findAllMatches,
-                    _ref7$minMatchCharLen = _ref7.minMatchCharLength,
-                    a = _ref7$minMatchCharLen === void 0 ? m.minMatchCharLength : _ref7$minMatchCharLen,
-                    _ref7$includeMatches = _ref7.includeMatches,
-                    c = _ref7$includeMatches === void 0 ? m.includeMatches : _ref7$includeMatches,
-                    _ref7$ignoreLocation = _ref7.ignoreLocation,
-                    l = _ref7$ignoreLocation === void 0 ? m.ignoreLocation : _ref7$ignoreLocation;
-
-                if (t.length > E) throw new Error("Pattern length exceeds max of 32.");
-                var h = t.length,
+            const {
+              isMatch: f,
+              score: v,
+              indices: g
+            } = function (e, t, i) {
+              let {
+                location: n = m.location,
+                distance: s = m.distance,
+                threshold: r = m.threshold,
+                findAllMatches: o = m.findAllMatches,
+                minMatchCharLength: a = m.minMatchCharLength,
+                includeMatches: c = m.includeMatches,
+                ignoreLocation: l = m.ignoreLocation
+              } = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+              if (t.length > E) throw new Error("Pattern length exceeds max of 32.");
+              const h = t.length,
                     u = e.length,
                     d = Math.max(0, Math.min(n, u));
-                var p = r,
-                    f = d;
-                var v = a > 1 || c,
+              let p = r,
+                  f = d;
+              const v = a > 1 || c,
                     g = v ? Array(u) : [];
 
-                var _;
+              let _;
 
-                for (; (_ = e.indexOf(t, f)) > -1;) {
-                  var _e5 = y(t, {
-                    currentLocation: _,
+              for (; (_ = e.indexOf(t, f)) > -1;) {
+                let e = y(t, {
+                  currentLocation: _,
+                  expectedLocation: d,
+                  distance: s,
+                  ignoreLocation: l
+                });
+
+                if (p = Math.min(e, p), f = _ + h, v) {
+                  let e = 0;
+
+                  for (; e < h;) g[_ + e] = 1, e += 1;
+                }
+              }
+
+              f = -1;
+              let b = [],
+                  S = 1,
+                  I = h + u;
+              const O = 1 << h - 1;
+
+              for (let n = 0; n < h; n += 1) {
+                let r = 0,
+                    a = I;
+
+                for (; r < a;) y(t, {
+                  errors: n,
+                  currentLocation: d + a,
+                  expectedLocation: d,
+                  distance: s,
+                  ignoreLocation: l
+                }) <= p ? r = a : I = a, a = Math.floor((I - r) / 2 + r);
+
+                I = a;
+
+                let c = Math.max(1, d - a + 1),
+                    m = o ? u : Math.min(d + a, u) + h,
+                    _ = Array(m + 2);
+
+                _[m + 1] = (1 << n) - 1;
+
+                for (let r = m; r >= c; r -= 1) {
+                  let o = r - 1,
+                      a = i[e.charAt(o)];
+
+                  if (v && (g[o] = +!!a), _[r] = (_[r + 1] << 1 | 1) & a, n && (_[r] |= (b[r + 1] | b[r]) << 1 | 1 | b[r + 1]), _[r] & O && (S = y(t, {
+                    errors: n,
+                    currentLocation: o,
                     expectedLocation: d,
                     distance: s,
                     ignoreLocation: l
-                  });
-
-                  if (p = Math.min(_e5, p), f = _ + h, v) {
-                    var _e6 = 0;
-
-                    for (; _e6 < h;) {
-                      g[_ + _e6] = 1, _e6 += 1;
-                    }
+                  }), S <= p)) {
+                    if (p = S, f = o, f <= d) break;
+                    c = Math.max(1, 2 * d - f);
                   }
                 }
 
-                f = -1;
-                var b = [],
-                    S = 1,
-                    I = h + u;
-                var O = 1 << h - 1;
+                if (y(t, {
+                  errors: n + 1,
+                  currentLocation: d,
+                  expectedLocation: d,
+                  distance: s,
+                  ignoreLocation: l
+                }) > p) break;
+                b = _;
+              }
 
-                for (var _n5 = 0; _n5 < h; _n5 += 1) {
-                  var _r2 = 0,
-                      _a = I;
+              const C = {
+                isMatch: f >= 0,
+                score: Math.max(.001, S)
+              };
 
-                  for (; _r2 < _a;) {
-                    y(t, {
-                      errors: _n5,
-                      currentLocation: d + _a,
-                      expectedLocation: d,
-                      distance: s,
-                      ignoreLocation: l
-                    }) <= p ? _r2 = _a : I = _a, _a = Math.floor((I - _r2) / 2 + _r2);
+              if (v) {
+                const e = function () {
+                  let e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+                  let t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : m.minMatchCharLength;
+                  let i = [],
+                      n = -1,
+                      s = -1,
+                      r = 0;
+
+                  for (let o = e.length; r < o; r += 1) {
+                    let o = e[r];
+                    o && -1 === n ? n = r : o || -1 === n || (s = r - 1, s - n + 1 >= t && i.push([n, s]), n = -1);
                   }
 
-                  I = _a;
+                  return e[r - 1] && r - n >= t && i.push([n, r - 1]), i;
+                }(g, a);
 
-                  var _c = Math.max(1, d - _a + 1),
-                      _m = o ? u : Math.min(d + _a, u) + h,
-                      _2 = Array(_m + 2);
+                e.length ? c && (C.indices = e) : C.isMatch = !1;
+              }
 
-                  _2[_m + 1] = (1 << _n5) - 1;
-
-                  for (var _r3 = _m; _r3 >= _c; _r3 -= 1) {
-                    var _o = _r3 - 1,
-                        _a2 = i[e.charAt(_o)];
-
-                    if (v && (g[_o] = +!!_a2), _2[_r3] = (_2[_r3 + 1] << 1 | 1) & _a2, _n5 && (_2[_r3] |= (b[_r3 + 1] | b[_r3]) << 1 | 1 | b[_r3 + 1]), _2[_r3] & O && (S = y(t, {
-                      errors: _n5,
-                      currentLocation: _o,
-                      expectedLocation: d,
-                      distance: s,
-                      ignoreLocation: l
-                    }), S <= p)) {
-                      if (p = S, f = _o, f <= d) break;
-                      _c = Math.max(1, 2 * d - f);
-                    }
-                  }
-
-                  if (y(t, {
-                    errors: _n5 + 1,
-                    currentLocation: d,
-                    expectedLocation: d,
-                    distance: s,
-                    ignoreLocation: l
-                  }) > p) break;
-                  b = _2;
-                }
-
-                var C = {
-                  isMatch: f >= 0,
-                  score: Math.max(.001, S)
-                };
-
-                if (v) {
-                  var _e7 = function () {
-                    var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-                    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : m.minMatchCharLength;
-                    var i = [],
-                        n = -1,
-                        s = -1,
-                        r = 0;
-
-                    for (var _o2 = e.length; r < _o2; r += 1) {
-                      var _o3 = e[r];
-                      _o3 && -1 === n ? n = r : _o3 || -1 === n || (s = r - 1, s - n + 1 >= t && i.push([n, s]), n = -1);
-                    }
-
-                    return e[r - 1] && r - n >= t && i.push([n, r - 1]), i;
-                  }(g, a);
-
-                  _e7.length ? c && (C.indices = _e7) : C.isMatch = !1;
-                }
-
-                return C;
-              }(e, t, d, {
-                location: n + p,
-                distance: s,
-                threshold: r,
-                findAllMatches: o,
-                minMatchCharLength: a,
-                includeMatches: i,
-                ignoreLocation: c
-              }),
-                  f = _ref6.isMatch,
-                  v = _ref6.score,
-                  g = _ref6.indices;
-
-              f && (u = !0), h += v, f && g && (l = [].concat(_toConsumableArray(l), _toConsumableArray(g)));
+              return C;
+            }(e, t, d, {
+              location: n + p,
+              distance: s,
+              threshold: r,
+              findAllMatches: o,
+              minMatchCharLength: a,
+              includeMatches: i,
+              ignoreLocation: c
             });
-            var d = {
-              isMatch: u,
-              score: u ? h / this.chunks.length : 1
-            };
-            return u && i && (d.indices = l), d;
-          }
-        }]);
 
-        return S;
-      }();
+            f && (u = !0), h += v, f && g && (l = [...l, ...g]);
+          });
+          let d = {
+            isMatch: u,
+            score: u ? h / this.chunks.length : 1
+          };
+          return u && i && (d.indices = l), d;
+        }
 
-      var I = /*#__PURE__*/function () {
-        function I(e) {
-          _classCallCheck(this, I);
+      }
 
+      class I {
+        constructor(e) {
           this.pattern = e;
         }
 
-        _createClass(I, [{
-          key: "search",
-          value: function search() {}
-        }], [{
-          key: "isMultiMatch",
-          value: function isMultiMatch(e) {
-            return O(e, this.multiRegex);
-          }
-        }, {
-          key: "isSingleMatch",
-          value: function isSingleMatch(e) {
-            return O(e, this.singleRegex);
-          }
-        }]);
+        static isMultiMatch(e) {
+          return O(e, this.multiRegex);
+        }
 
-        return I;
-      }();
+        static isSingleMatch(e) {
+          return O(e, this.singleRegex);
+        }
+
+        search() {}
+
+      }
 
       function O(e, t) {
-        var i = e.match(t);
+        const i = e.match(t);
         return i ? i[1] : null;
       }
 
-      var C = /*#__PURE__*/function (_I) {
-        _inherits(C, _I);
-
-        var _super = _createSuper(C);
-
-        function C(e) {
-          var _this6;
-
-          var _ref8 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-              _ref8$location = _ref8.location,
-              t = _ref8$location === void 0 ? m.location : _ref8$location,
-              _ref8$threshold = _ref8.threshold,
-              i = _ref8$threshold === void 0 ? m.threshold : _ref8$threshold,
-              _ref8$distance = _ref8.distance,
-              n = _ref8$distance === void 0 ? m.distance : _ref8$distance,
-              _ref8$includeMatches = _ref8.includeMatches,
-              s = _ref8$includeMatches === void 0 ? m.includeMatches : _ref8$includeMatches,
-              _ref8$findAllMatches = _ref8.findAllMatches,
-              r = _ref8$findAllMatches === void 0 ? m.findAllMatches : _ref8$findAllMatches,
-              _ref8$minMatchCharLen = _ref8.minMatchCharLength,
-              o = _ref8$minMatchCharLen === void 0 ? m.minMatchCharLength : _ref8$minMatchCharLen,
-              _ref8$isCaseSensitive = _ref8.isCaseSensitive,
-              a = _ref8$isCaseSensitive === void 0 ? m.isCaseSensitive : _ref8$isCaseSensitive,
-              _ref8$ignoreLocation = _ref8.ignoreLocation,
-              c = _ref8$ignoreLocation === void 0 ? m.ignoreLocation : _ref8$ignoreLocation;
-
-          _classCallCheck(this, C);
-
-          _this6 = _super.call(this, e), _this6._bitapSearch = new S(e, {
+      class C extends I {
+        constructor(e) {
+          let {
+            location: t = m.location,
+            threshold: i = m.threshold,
+            distance: n = m.distance,
+            includeMatches: s = m.includeMatches,
+            findAllMatches: r = m.findAllMatches,
+            minMatchCharLength: o = m.minMatchCharLength,
+            isCaseSensitive: a = m.isCaseSensitive,
+            ignoreLocation: c = m.ignoreLocation
+          } = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+          super(e), this._bitapSearch = new S(e, {
             location: t,
             threshold: i,
             distance: n,
@@ -3217,380 +3054,270 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             isCaseSensitive: a,
             ignoreLocation: c
           });
-          return _this6;
         }
 
-        _createClass(C, [{
-          key: "search",
-          value: function search(e) {
-            return this._bitapSearch.searchIn(e);
-          }
-        }], [{
-          key: "type",
-          get: function get() {
-            return "fuzzy";
-          }
-        }, {
-          key: "multiRegex",
-          get: function get() {
-            return /^"(.*)"$/;
-          }
-        }, {
-          key: "singleRegex",
-          get: function get() {
-            return /^(.*)$/;
-          }
-        }]);
-
-        return C;
-      }(I);
-
-      var T = /*#__PURE__*/function (_I2) {
-        _inherits(T, _I2);
-
-        var _super2 = _createSuper(T);
-
-        function T(e) {
-          _classCallCheck(this, T);
-
-          return _super2.call(this, e);
+        static get type() {
+          return "fuzzy";
         }
 
-        _createClass(T, [{
-          key: "search",
-          value: function search(e) {
-            var t,
-                i = 0;
-            var n = [],
+        static get multiRegex() {
+          return /^"(.*)"$/;
+        }
+
+        static get singleRegex() {
+          return /^(.*)$/;
+        }
+
+        search(e) {
+          return this._bitapSearch.searchIn(e);
+        }
+
+      }
+
+      class T extends I {
+        constructor(e) {
+          super(e);
+        }
+
+        static get type() {
+          return "include";
+        }
+
+        static get multiRegex() {
+          return /^'"(.*)"$/;
+        }
+
+        static get singleRegex() {
+          return /^'(.*)$/;
+        }
+
+        search(e) {
+          let t,
+              i = 0;
+          const n = [],
                 s = this.pattern.length;
 
-            for (; (t = e.indexOf(this.pattern, i)) > -1;) {
-              i = t + s, n.push([t, i - 1]);
-            }
+          for (; (t = e.indexOf(this.pattern, i)) > -1;) i = t + s, n.push([t, i - 1]);
 
-            var r = !!n.length;
-            return {
-              isMatch: r,
-              score: r ? 0 : 1,
-              indices: n
-            };
-          }
-        }], [{
-          key: "type",
-          get: function get() {
-            return "include";
-          }
-        }, {
-          key: "multiRegex",
-          get: function get() {
-            return /^'"(.*)"$/;
-          }
-        }, {
-          key: "singleRegex",
-          get: function get() {
-            return /^'(.*)$/;
-          }
-        }]);
-
-        return T;
-      }(I);
-
-      var L = [/*#__PURE__*/function (_I3) {
-        _inherits(_class, _I3);
-
-        var _super3 = _createSuper(_class);
-
-        function _class(e) {
-          _classCallCheck(this, _class);
-
-          return _super3.call(this, e);
+          const r = !!n.length;
+          return {
+            isMatch: r,
+            score: r ? 0 : 1,
+            indices: n
+          };
         }
 
-        _createClass(_class, [{
-          key: "search",
-          value: function search(e) {
-            var t = e === this.pattern;
-            return {
-              isMatch: t,
-              score: t ? 0 : 1,
-              indices: [0, this.pattern.length - 1]
-            };
-          }
-        }], [{
-          key: "type",
-          get: function get() {
-            return "exact";
-          }
-        }, {
-          key: "multiRegex",
-          get: function get() {
-            return /^="(.*)"$/;
-          }
-        }, {
-          key: "singleRegex",
-          get: function get() {
-            return /^=(.*)$/;
-          }
-        }]);
+      }
 
-        return _class;
-      }(I), T, /*#__PURE__*/function (_I4) {
-        _inherits(_class2, _I4);
-
-        var _super4 = _createSuper(_class2);
-
-        function _class2(e) {
-          _classCallCheck(this, _class2);
-
-          return _super4.call(this, e);
+      const L = [class extends I {
+        constructor(e) {
+          super(e);
         }
 
-        _createClass(_class2, [{
-          key: "search",
-          value: function search(e) {
-            var t = e.startsWith(this.pattern);
-            return {
-              isMatch: t,
-              score: t ? 0 : 1,
-              indices: [0, this.pattern.length - 1]
-            };
-          }
-        }], [{
-          key: "type",
-          get: function get() {
-            return "prefix-exact";
-          }
-        }, {
-          key: "multiRegex",
-          get: function get() {
-            return /^\^"(.*)"$/;
-          }
-        }, {
-          key: "singleRegex",
-          get: function get() {
-            return /^\^(.*)$/;
-          }
-        }]);
-
-        return _class2;
-      }(I), /*#__PURE__*/function (_I5) {
-        _inherits(_class3, _I5);
-
-        var _super5 = _createSuper(_class3);
-
-        function _class3(e) {
-          _classCallCheck(this, _class3);
-
-          return _super5.call(this, e);
+        static get type() {
+          return "exact";
         }
 
-        _createClass(_class3, [{
-          key: "search",
-          value: function search(e) {
-            var t = !e.startsWith(this.pattern);
-            return {
-              isMatch: t,
-              score: t ? 0 : 1,
-              indices: [0, e.length - 1]
-            };
-          }
-        }], [{
-          key: "type",
-          get: function get() {
-            return "inverse-prefix-exact";
-          }
-        }, {
-          key: "multiRegex",
-          get: function get() {
-            return /^!\^"(.*)"$/;
-          }
-        }, {
-          key: "singleRegex",
-          get: function get() {
-            return /^!\^(.*)$/;
-          }
-        }]);
-
-        return _class3;
-      }(I), /*#__PURE__*/function (_I6) {
-        _inherits(_class4, _I6);
-
-        var _super6 = _createSuper(_class4);
-
-        function _class4(e) {
-          _classCallCheck(this, _class4);
-
-          return _super6.call(this, e);
+        static get multiRegex() {
+          return /^="(.*)"$/;
         }
 
-        _createClass(_class4, [{
-          key: "search",
-          value: function search(e) {
-            var t = !e.endsWith(this.pattern);
-            return {
-              isMatch: t,
-              score: t ? 0 : 1,
-              indices: [0, e.length - 1]
-            };
-          }
-        }], [{
-          key: "type",
-          get: function get() {
-            return "inverse-suffix-exact";
-          }
-        }, {
-          key: "multiRegex",
-          get: function get() {
-            return /^!"(.*)"\$$/;
-          }
-        }, {
-          key: "singleRegex",
-          get: function get() {
-            return /^!(.*)\$$/;
-          }
-        }]);
-
-        return _class4;
-      }(I), /*#__PURE__*/function (_I7) {
-        _inherits(_class5, _I7);
-
-        var _super7 = _createSuper(_class5);
-
-        function _class5(e) {
-          _classCallCheck(this, _class5);
-
-          return _super7.call(this, e);
+        static get singleRegex() {
+          return /^=(.*)$/;
         }
 
-        _createClass(_class5, [{
-          key: "search",
-          value: function search(e) {
-            var t = e.endsWith(this.pattern);
-            return {
-              isMatch: t,
-              score: t ? 0 : 1,
-              indices: [e.length - this.pattern.length, e.length - 1]
-            };
-          }
-        }], [{
-          key: "type",
-          get: function get() {
-            return "suffix-exact";
-          }
-        }, {
-          key: "multiRegex",
-          get: function get() {
-            return /^"(.*)"\$$/;
-          }
-        }, {
-          key: "singleRegex",
-          get: function get() {
-            return /^(.*)\$$/;
-          }
-        }]);
-
-        return _class5;
-      }(I), /*#__PURE__*/function (_I8) {
-        _inherits(_class6, _I8);
-
-        var _super8 = _createSuper(_class6);
-
-        function _class6(e) {
-          _classCallCheck(this, _class6);
-
-          return _super8.call(this, e);
+        search(e) {
+          const t = e === this.pattern;
+          return {
+            isMatch: t,
+            score: t ? 0 : 1,
+            indices: [0, this.pattern.length - 1]
+          };
         }
 
-        _createClass(_class6, [{
-          key: "search",
-          value: function search(e) {
-            var t = -1 === e.indexOf(this.pattern);
-            return {
-              isMatch: t,
-              score: t ? 0 : 1,
-              indices: [0, e.length - 1]
-            };
-          }
-        }], [{
-          key: "type",
-          get: function get() {
-            return "inverse-exact";
-          }
-        }, {
-          key: "multiRegex",
-          get: function get() {
-            return /^!"(.*)"$/;
-          }
-        }, {
-          key: "singleRegex",
-          get: function get() {
-            return /^!(.*)$/;
-          }
-        }]);
+      }, T, class extends I {
+        constructor(e) {
+          super(e);
+        }
 
-        return _class6;
-      }(I), C],
-          w = L.length,
-          A = / +(?=([^\"]*\"[^\"]*\")*[^\"]*$)/,
-          M = new Set([C.type, T.type]);
-      var P = [];
+        static get type() {
+          return "prefix-exact";
+        }
+
+        static get multiRegex() {
+          return /^\^"(.*)"$/;
+        }
+
+        static get singleRegex() {
+          return /^\^(.*)$/;
+        }
+
+        search(e) {
+          const t = e.startsWith(this.pattern);
+          return {
+            isMatch: t,
+            score: t ? 0 : 1,
+            indices: [0, this.pattern.length - 1]
+          };
+        }
+
+      }, class extends I {
+        constructor(e) {
+          super(e);
+        }
+
+        static get type() {
+          return "inverse-prefix-exact";
+        }
+
+        static get multiRegex() {
+          return /^!\^"(.*)"$/;
+        }
+
+        static get singleRegex() {
+          return /^!\^(.*)$/;
+        }
+
+        search(e) {
+          const t = !e.startsWith(this.pattern);
+          return {
+            isMatch: t,
+            score: t ? 0 : 1,
+            indices: [0, e.length - 1]
+          };
+        }
+
+      }, class extends I {
+        constructor(e) {
+          super(e);
+        }
+
+        static get type() {
+          return "inverse-suffix-exact";
+        }
+
+        static get multiRegex() {
+          return /^!"(.*)"\$$/;
+        }
+
+        static get singleRegex() {
+          return /^!(.*)\$$/;
+        }
+
+        search(e) {
+          const t = !e.endsWith(this.pattern);
+          return {
+            isMatch: t,
+            score: t ? 0 : 1,
+            indices: [0, e.length - 1]
+          };
+        }
+
+      }, class extends I {
+        constructor(e) {
+          super(e);
+        }
+
+        static get type() {
+          return "suffix-exact";
+        }
+
+        static get multiRegex() {
+          return /^"(.*)"\$$/;
+        }
+
+        static get singleRegex() {
+          return /^(.*)\$$/;
+        }
+
+        search(e) {
+          const t = e.endsWith(this.pattern);
+          return {
+            isMatch: t,
+            score: t ? 0 : 1,
+            indices: [e.length - this.pattern.length, e.length - 1]
+          };
+        }
+
+      }, class extends I {
+        constructor(e) {
+          super(e);
+        }
+
+        static get type() {
+          return "inverse-exact";
+        }
+
+        static get multiRegex() {
+          return /^!"(.*)"$/;
+        }
+
+        static get singleRegex() {
+          return /^!(.*)$/;
+        }
+
+        search(e) {
+          const t = -1 === e.indexOf(this.pattern);
+          return {
+            isMatch: t,
+            score: t ? 0 : 1,
+            indices: [0, e.length - 1]
+          };
+        }
+
+      }, C],
+            w = L.length,
+            A = / +(?=([^\"]*\"[^\"]*\")*[^\"]*$)/,
+            M = new Set([C.type, T.type]);
+      const P = [];
 
       function x(e, t) {
-        for (var _i6 = 0, _n6 = P.length; _i6 < _n6; _i6 += 1) {
-          var _n7 = P[_i6];
-          if (_n7.condition(e, t)) return new _n7(e, t);
+        for (let i = 0, n = P.length; i < n; i += 1) {
+          let n = P[i];
+          if (n.condition(e, t)) return new n(e, t);
         }
 
         return new S(e, t);
       }
 
-      var N = "$and",
-          D = function D(e) {
-        return !(!e.$and && !e.$or);
-      },
-          j = function j(e) {
-        return _defineProperty({}, N, Object.keys(e).map(function (t) {
-          return _defineProperty({}, t, e[t]);
-        }));
-      };
+      const N = "$and",
+            D = e => !(!e.$and && !e.$or),
+            j = e => ({
+        [N]: Object.keys(e).map(t => ({
+          [t]: e[t]
+        }))
+      });
 
       function F(e, t) {
-        var _ref11 = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {},
-            _ref11$auto = _ref11.auto,
-            i = _ref11$auto === void 0 ? !0 : _ref11$auto;
+        let {
+          auto: i = !0
+        } = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
 
-        var r = function r(e) {
-          var a = Object.keys(e);
+        const r = e => {
+          let a = Object.keys(e);
 
-          var c = function (e) {
-            return !!e.$path;
-          }(e);
+          const c = (e => !!e.$path)(e);
 
           if (!c && a.length > 1 && !D(e)) return r(j(e));
 
-          if (function (e) {
-            return !n(e) && o(e) && !D(e);
-          }(e)) {
-            var _n8 = c ? e.$path : a[0],
-                _r4 = c ? e.$val : e[_n8];
-
-            if (!s(_r4)) throw new Error(function (e) {
-              return "Invalid value for key ".concat(e);
-            }(_n8));
-            var _o4 = {
-              keyId: f(_n8),
-              pattern: _r4
+          if ((e => !n(e) && o(e) && !D(e))(e)) {
+            const n = c ? e.$path : a[0],
+                  r = c ? e.$val : e[n];
+            if (!s(r)) throw new Error((e => "Invalid value for key ".concat(e))(n));
+            const o = {
+              keyId: f(n),
+              pattern: r
             };
-            return i && (_o4.searcher = x(_r4, t)), _o4;
+            return i && (o.searcher = x(r, t)), o;
           }
 
-          var l = {
+          let l = {
             children: [],
             operator: a[0]
           };
-          return a.forEach(function (t) {
-            var i = e[t];
-            n(i) && i.forEach(function (e) {
+          return a.forEach(t => {
+            const i = e[t];
+            n(i) && i.forEach(e => {
               l.children.push(r(e));
             });
           }), l;
@@ -3600,12 +3327,14 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       }
 
       function k(e, t) {
-        var i = e.matches;
-        t.matches = [], a(i) && i.forEach(function (e) {
+        const i = e.matches;
+        t.matches = [], a(i) && i.forEach(e => {
           if (!a(e.indices) || !e.indices.length) return;
-          var i = e.indices,
-              n = e.value;
-          var s = {
+          const {
+            indices: i,
+            value: n
+          } = e;
+          let s = {
             indices: i,
             value: n
           };
@@ -3617,311 +3346,296 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         t.score = e.score;
       }
 
-      var R = /*#__PURE__*/function () {
-        function R(e) {
-          var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-          var i = arguments.length > 2 ? arguments[2] : undefined;
-
-          _classCallCheck(this, R);
-
-          this.options = _objectSpread(_objectSpread({}, m), t), this.options.useExtendedSearch, this._keyStore = new u(this.options.keys), this.setCollection(e, i);
+      class R {
+        constructor(e) {
+          let t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+          let i = arguments.length > 2 ? arguments[2] : undefined;
+          this.options = { ...m,
+            ...t
+          }, this.options.useExtendedSearch, this._keyStore = new u(this.options.keys), this.setCollection(e, i);
         }
 
-        _createClass(R, [{
-          key: "setCollection",
-          value: function setCollection(e, t) {
-            if (this._docs = e, t && !(t instanceof g)) throw new Error("Incorrect 'index' type");
-            this._myIndex = t || _(this.options.keys, this._docs, {
-              getFn: this.options.getFn,
-              fieldNormWeight: this.options.fieldNormWeight
-            });
-          }
-        }, {
-          key: "add",
-          value: function add(e) {
-            a(e) && (this._docs.push(e), this._myIndex.add(e));
-          }
-        }, {
-          key: "remove",
-          value: function remove() {
-            var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : function () {
-              return !1;
-            };
-            var t = [];
+        setCollection(e, t) {
+          if (this._docs = e, t && !(t instanceof g)) throw new Error("Incorrect 'index' type");
+          this._myIndex = t || _(this.options.keys, this._docs, {
+            getFn: this.options.getFn,
+            fieldNormWeight: this.options.fieldNormWeight
+          });
+        }
 
-            for (var _i7 = 0, _n9 = this._docs.length; _i7 < _n9; _i7 += 1) {
-              var _s2 = this._docs[_i7];
-              e(_s2, _i7) && (this.removeAt(_i7), _i7 -= 1, _n9 -= 1, t.push(_s2));
+        add(e) {
+          a(e) && (this._docs.push(e), this._myIndex.add(e));
+        }
+
+        remove() {
+          let e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : () => !1;
+          const t = [];
+
+          for (let i = 0, n = this._docs.length; i < n; i += 1) {
+            const s = this._docs[i];
+            e(s, i) && (this.removeAt(i), i -= 1, n -= 1, t.push(s));
+          }
+
+          return t;
+        }
+
+        removeAt(e) {
+          this._docs.splice(e, 1), this._myIndex.removeAt(e);
+        }
+
+        getIndex() {
+          return this._myIndex;
+        }
+
+        search(e) {
+          let {
+            limit: t = -1
+          } = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+          const {
+            includeMatches: i,
+            includeScore: n,
+            shouldSort: o,
+            sortFn: a,
+            ignoreFieldNorm: c
+          } = this.options;
+          let l = s(e) ? s(this._docs[0]) ? this._searchStringList(e) : this._searchObjectList(e) : this._searchLogical(e);
+          return function (e, _ref2) {
+            let {
+              ignoreFieldNorm: t = m.ignoreFieldNorm
+            } = _ref2;
+            e.forEach(e => {
+              let i = 1;
+              e.matches.forEach(_ref3 => {
+                let {
+                  key: e,
+                  norm: n,
+                  score: s
+                } = _ref3;
+                const r = e ? e.weight : null;
+                i *= Math.pow(0 === s && r ? Number.EPSILON : s, (r || 1) * (t ? 1 : n));
+              }), e.score = i;
+            });
+          }(l, {
+            ignoreFieldNorm: c
+          }), o && l.sort(a), r(t) && t > -1 && (l = l.slice(0, t)), function (e, t) {
+            let {
+              includeMatches: i = m.includeMatches,
+              includeScore: n = m.includeScore
+            } = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+            const s = [];
+            return i && s.push(k), n && s.push(K), e.map(e => {
+              const {
+                idx: i
+              } = e,
+                    n = {
+                item: t[i],
+                refIndex: i
+              };
+              return s.length && s.forEach(t => {
+                t(e, n);
+              }), n;
+            });
+          }(l, this._docs, {
+            includeMatches: i,
+            includeScore: n
+          });
+        }
+
+        _searchStringList(e) {
+          const t = x(e, this.options),
+                {
+            records: i
+          } = this._myIndex,
+                n = [];
+          return i.forEach(_ref4 => {
+            let {
+              v: e,
+              i: i,
+              n: s
+            } = _ref4;
+            if (!a(e)) return;
+            const {
+              isMatch: r,
+              score: o,
+              indices: c
+            } = t.searchIn(e);
+            r && n.push({
+              item: e,
+              idx: i,
+              matches: [{
+                score: o,
+                value: e,
+                norm: s,
+                indices: c
+              }]
+            });
+          }), n;
+        }
+
+        _searchLogical(e) {
+          const t = F(e, this.options),
+                i = (e, t, n) => {
+            if (!e.children) {
+              const {
+                keyId: i,
+                searcher: s
+              } = e,
+                    r = this._findMatches({
+                key: this._keyStore.get(i),
+                value: this._myIndex.getValueForItemAtKeyId(t, i),
+                searcher: s
+              });
+
+              return r && r.length ? [{
+                idx: n,
+                item: t,
+                matches: r
+              }] : [];
             }
 
-            return t;
-          }
-        }, {
-          key: "removeAt",
-          value: function removeAt(e) {
-            this._docs.splice(e, 1), this._myIndex.removeAt(e);
-          }
-        }, {
-          key: "getIndex",
-          value: function getIndex() {
-            return this._myIndex;
-          }
-        }, {
-          key: "search",
-          value: function search(e) {
-            var _ref12 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-                _ref12$limit = _ref12.limit,
-                t = _ref12$limit === void 0 ? -1 : _ref12$limit;
+            const s = [];
 
-            var _this$options3 = this.options,
-                i = _this$options3.includeMatches,
-                n = _this$options3.includeScore,
-                o = _this$options3.shouldSort,
-                a = _this$options3.sortFn,
-                c = _this$options3.ignoreFieldNorm;
-            var l = s(e) ? s(this._docs[0]) ? this._searchStringList(e) : this._searchObjectList(e) : this._searchLogical(e);
-            return function (e, _ref13) {
-              var _ref13$ignoreFieldNor = _ref13.ignoreFieldNorm,
-                  t = _ref13$ignoreFieldNor === void 0 ? m.ignoreFieldNorm : _ref13$ignoreFieldNor;
-              e.forEach(function (e) {
-                var i = 1;
-                e.matches.forEach(function (_ref14) {
-                  var e = _ref14.key,
-                      n = _ref14.norm,
-                      s = _ref14.score;
-                  var r = e ? e.weight : null;
-                  i *= Math.pow(0 === s && r ? Number.EPSILON : s, (r || 1) * (t ? 1 : n));
-                }), e.score = i;
-              });
-            }(l, {
-              ignoreFieldNorm: c
-            }), o && l.sort(a), r(t) && t > -1 && (l = l.slice(0, t)), function (e, t) {
-              var _ref15 = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {},
-                  _ref15$includeMatches = _ref15.includeMatches,
-                  i = _ref15$includeMatches === void 0 ? m.includeMatches : _ref15$includeMatches,
-                  _ref15$includeScore = _ref15.includeScore,
-                  n = _ref15$includeScore === void 0 ? m.includeScore : _ref15$includeScore;
+            for (let r = 0, o = e.children.length; r < o; r += 1) {
+              const o = e.children[r],
+                    a = i(o, t, n);
+              if (a.length) s.push(...a);else if (e.operator === N) return [];
+            }
 
-              var s = [];
-              return i && s.push(k), n && s.push(K), e.map(function (e) {
-                var i = e.idx,
-                    n = {
-                  item: t[i],
-                  refIndex: i
-                };
-                return s.length && s.forEach(function (t) {
-                  t(e, n);
-                }), n;
-              });
-            }(l, this._docs, {
-              includeMatches: i,
-              includeScore: n
-            });
-          }
-        }, {
-          key: "_searchStringList",
-          value: function _searchStringList(e) {
-            var t = x(e, this.options),
-                i = this._myIndex.records,
-                n = [];
-            return i.forEach(function (_ref16) {
-              var e = _ref16.v,
-                  i = _ref16.i,
-                  s = _ref16.n;
-              if (!a(e)) return;
-
-              var _t$searchIn = t.searchIn(e),
-                  r = _t$searchIn.isMatch,
-                  o = _t$searchIn.score,
-                  c = _t$searchIn.indices;
-
-              r && n.push({
-                item: e,
-                idx: i,
-                matches: [{
-                  score: o,
-                  value: e,
-                  norm: s,
-                  indices: c
-                }]
-              });
-            }), n;
-          }
-        }, {
-          key: "_searchLogical",
-          value: function _searchLogical(e) {
-            var _this7 = this;
-
-            var t = F(e, this.options),
-                i = function i(e, t, n) {
-              if (!e.children) {
-                var _i8 = e.keyId,
-                    _s3 = e.searcher,
-                    _r5 = _this7._findMatches({
-                  key: _this7._keyStore.get(_i8),
-                  value: _this7._myIndex.getValueForItemAtKeyId(t, _i8),
-                  searcher: _s3
-                });
-
-                return _r5 && _r5.length ? [{
-                  idx: n,
-                  item: t,
-                  matches: _r5
-                }] : [];
-              }
-
-              var s = [];
-
-              for (var _r6 = 0, _o5 = e.children.length; _r6 < _o5; _r6 += 1) {
-                var _o6 = e.children[_r6],
-                    _a3 = i(_o6, t, n);
-
-                if (_a3.length) s.push.apply(s, _toConsumableArray(_a3));else if (e.operator === N) return [];
-              }
-
-              return s;
-            },
+            return s;
+          },
                 n = this._myIndex.records,
                 s = {},
                 r = [];
 
-            return n.forEach(function (_ref17) {
-              var e = _ref17.$,
-                  n = _ref17.i;
+          return n.forEach(_ref5 => {
+            let {
+              $: e,
+              i: n
+            } = _ref5;
 
-              if (a(e)) {
-                var _o7 = i(t, e, n);
-
-                _o7.length && (s[n] || (s[n] = {
-                  idx: n,
-                  item: e,
-                  matches: []
-                }, r.push(s[n])), _o7.forEach(function (_ref18) {
-                  var _s$n$matches;
-
-                  var e = _ref18.matches;
-
-                  (_s$n$matches = s[n].matches).push.apply(_s$n$matches, _toConsumableArray(e));
-                }));
-              }
-            }), r;
-          }
-        }, {
-          key: "_searchObjectList",
-          value: function _searchObjectList(e) {
-            var _this8 = this;
-
-            var t = x(e, this.options),
-                _this$_myIndex = this._myIndex,
-                i = _this$_myIndex.keys,
-                n = _this$_myIndex.records,
-                s = [];
-            return n.forEach(function (_ref19) {
-              var e = _ref19.$,
-                  n = _ref19.i;
-              if (!a(e)) return;
-              var r = [];
-              i.forEach(function (i, n) {
-                r.push.apply(r, _toConsumableArray(_this8._findMatches({
-                  key: i,
-                  value: e[n],
-                  searcher: t
-                })));
-              }), r.length && s.push({
+            if (a(e)) {
+              let o = i(t, e, n);
+              o.length && (s[n] || (s[n] = {
                 idx: n,
                 item: e,
-                matches: r
-              });
-            }), s;
-          }
-        }, {
-          key: "_findMatches",
-          value: function _findMatches(_ref20) {
-            var e = _ref20.key,
-                t = _ref20.value,
-                i = _ref20.searcher;
-            if (!a(t)) return [];
-            var s = [];
-            if (n(t)) t.forEach(function (_ref21) {
-              var t = _ref21.v,
-                  n = _ref21.i,
-                  r = _ref21.n;
-              if (!a(t)) return;
-
-              var _i$searchIn = i.searchIn(t),
-                  o = _i$searchIn.isMatch,
-                  c = _i$searchIn.score,
-                  l = _i$searchIn.indices;
-
-              o && s.push({
-                score: c,
-                key: e,
-                value: t,
-                idx: n,
-                norm: r,
-                indices: l
-              });
-            });else {
-              var _n10 = t.v,
-                  _r7 = t.n,
-                  _i$searchIn2 = i.searchIn(_n10),
-                  _o8 = _i$searchIn2.isMatch,
-                  _a4 = _i$searchIn2.score,
-                  _c2 = _i$searchIn2.indices;
-
-              _o8 && s.push({
-                score: _a4,
-                key: e,
-                value: _n10,
-                norm: _r7,
-                indices: _c2
-              });
+                matches: []
+              }, r.push(s[n])), o.forEach(_ref6 => {
+                let {
+                  matches: e
+                } = _ref6;
+                s[n].matches.push(...e);
+              }));
             }
-            return s;
-          }
-        }]);
+          }), r;
+        }
 
-        return R;
-      }();
+        _searchObjectList(e) {
+          const t = x(e, this.options),
+                {
+            keys: i,
+            records: n
+          } = this._myIndex,
+                s = [];
+          return n.forEach(_ref7 => {
+            let {
+              $: e,
+              i: n
+            } = _ref7;
+            if (!a(e)) return;
+            let r = [];
+            i.forEach((i, n) => {
+              r.push(...this._findMatches({
+                key: i,
+                value: e[n],
+                searcher: t
+              }));
+            }), r.length && s.push({
+              idx: n,
+              item: e,
+              matches: r
+            });
+          }), s;
+        }
+
+        _findMatches(_ref8) {
+          let {
+            key: e,
+            value: t,
+            searcher: i
+          } = _ref8;
+          if (!a(t)) return [];
+          let s = [];
+          if (n(t)) t.forEach(_ref9 => {
+            let {
+              v: t,
+              i: n,
+              n: r
+            } = _ref9;
+            if (!a(t)) return;
+            const {
+              isMatch: o,
+              score: c,
+              indices: l
+            } = i.searchIn(t);
+            o && s.push({
+              score: c,
+              key: e,
+              value: t,
+              idx: n,
+              norm: r,
+              indices: l
+            });
+          });else {
+            const {
+              v: n,
+              n: r
+            } = t,
+                  {
+              isMatch: o,
+              score: a,
+              indices: c
+            } = i.searchIn(n);
+            o && s.push({
+              score: a,
+              key: e,
+              value: n,
+              norm: r,
+              indices: c
+            });
+          }
+          return s;
+        }
+
+      }
 
       R.version = "6.5.3", R.createIndex = _, R.parseIndex = function (e) {
-        var _ref22 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-            _ref22$getFn = _ref22.getFn,
-            t = _ref22$getFn === void 0 ? m.getFn : _ref22$getFn,
-            _ref22$fieldNormWeigh = _ref22.fieldNormWeight,
-            i = _ref22$fieldNormWeigh === void 0 ? m.fieldNormWeight : _ref22$fieldNormWeigh;
-
-        var n = e.keys,
-            s = e.records,
-            r = new g({
+        let {
+          getFn: t = m.getFn,
+          fieldNormWeight: i = m.fieldNormWeight
+        } = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+        const {
+          keys: n,
+          records: s
+        } = e,
+              r = new g({
           getFn: t,
           fieldNormWeight: i
         });
         return r.setKeys(n), r.setIndexRecords(s), r;
       }, R.config = m, R.parseQuery = F, function () {
-        P.push.apply(P, arguments);
-      }( /*#__PURE__*/function () {
-        function _class7(e) {
-          var _ref23 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-              _ref23$isCaseSensitiv = _ref23.isCaseSensitive,
-              t = _ref23$isCaseSensitiv === void 0 ? m.isCaseSensitive : _ref23$isCaseSensitiv,
-              _ref23$includeMatches = _ref23.includeMatches,
-              i = _ref23$includeMatches === void 0 ? m.includeMatches : _ref23$includeMatches,
-              _ref23$minMatchCharLe = _ref23.minMatchCharLength,
-              n = _ref23$minMatchCharLe === void 0 ? m.minMatchCharLength : _ref23$minMatchCharLe,
-              _ref23$ignoreLocation = _ref23.ignoreLocation,
-              s = _ref23$ignoreLocation === void 0 ? m.ignoreLocation : _ref23$ignoreLocation,
-              _ref23$findAllMatches = _ref23.findAllMatches,
-              r = _ref23$findAllMatches === void 0 ? m.findAllMatches : _ref23$findAllMatches,
-              _ref23$location = _ref23.location,
-              o = _ref23$location === void 0 ? m.location : _ref23$location,
-              _ref23$threshold = _ref23.threshold,
-              a = _ref23$threshold === void 0 ? m.threshold : _ref23$threshold,
-              _ref23$distance = _ref23.distance,
-              c = _ref23$distance === void 0 ? m.distance : _ref23$distance;
-
-          _classCallCheck(this, _class7);
-
+        P.push(...arguments);
+      }(class {
+        constructor(e) {
+          let {
+            isCaseSensitive: t = m.isCaseSensitive,
+            includeMatches: i = m.includeMatches,
+            minMatchCharLength: n = m.minMatchCharLength,
+            ignoreLocation: s = m.ignoreLocation,
+            findAllMatches: r = m.findAllMatches,
+            location: o = m.location,
+            threshold: a = m.threshold,
+            distance: c = m.distance
+          } = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
           this.query = null, this.options = {
             isCaseSensitive: t,
             includeMatches: i,
@@ -3932,34 +3646,28 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             threshold: a,
             distance: c
           }, this.pattern = t ? e : e.toLowerCase(), this.query = function (e) {
-            var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-            return e.split("|").map(function (e) {
-              var i = e.trim().split(A).filter(function (e) {
-                return e && !!e.trim();
-              }),
+            let t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+            return e.split("|").map(e => {
+              let i = e.trim().split(A).filter(e => e && !!e.trim()),
                   n = [];
 
-              for (var _e8 = 0, _s4 = i.length; _e8 < _s4; _e8 += 1) {
-                var _s5 = i[_e8];
+              for (let e = 0, s = i.length; e < s; e += 1) {
+                const s = i[e];
+                let r = !1,
+                    o = -1;
 
-                var _r8 = !1,
-                    _o9 = -1;
-
-                for (; !_r8 && ++_o9 < w;) {
-                  var _e9 = L[_o9];
-
-                  var _i9 = _e9.isMultiMatch(_s5);
-
-                  _i9 && (n.push(new _e9(_i9, t)), _r8 = !0);
+                for (; !r && ++o < w;) {
+                  const e = L[o];
+                  let i = e.isMultiMatch(s);
+                  i && (n.push(new e(i, t)), r = !0);
                 }
 
-                if (!_r8) for (_o9 = -1; ++_o9 < w;) {
-                  var _e10 = L[_o9];
+                if (!r) for (o = -1; ++o < w;) {
+                  const e = L[o];
+                  let i = e.isSingleMatch(s);
 
-                  var _i10 = _e10.isSingleMatch(_s5);
-
-                  if (_i10) {
-                    n.push(new _e10(_i10, t));
+                  if (i) {
+                    n.push(new e(i, t));
                     break;
                   }
                 }
@@ -3970,69 +3678,66 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           }(this.pattern, this.options);
         }
 
-        _createClass(_class7, [{
-          key: "searchIn",
-          value: function searchIn(e) {
-            var t = this.query;
-            if (!t) return {
-              isMatch: !1,
-              score: 1
-            };
-            var _this$options4 = this.options,
-                i = _this$options4.includeMatches,
-                n = _this$options4.isCaseSensitive;
-            e = n ? e : e.toLowerCase();
-            var s = 0,
-                r = [],
-                o = 0;
+        static condition(e, t) {
+          return t.useExtendedSearch;
+        }
 
-            for (var _n11 = 0, _a5 = t.length; _n11 < _a5; _n11 += 1) {
-              var _a6 = t[_n11];
-              r.length = 0, s = 0;
+        searchIn(e) {
+          const t = this.query;
+          if (!t) return {
+            isMatch: !1,
+            score: 1
+          };
+          const {
+            includeMatches: i,
+            isCaseSensitive: n
+          } = this.options;
+          e = n ? e : e.toLowerCase();
+          let s = 0,
+              r = [],
+              o = 0;
 
-              for (var _t5 = 0, _n12 = _a6.length; _t5 < _n12; _t5 += 1) {
-                var _n13 = _a6[_t5],
-                    _n13$search = _n13.search(e),
-                    _c3 = _n13$search.isMatch,
-                    _l = _n13$search.indices,
-                    _h = _n13$search.score;
+          for (let n = 0, a = t.length; n < a; n += 1) {
+            const a = t[n];
+            r.length = 0, s = 0;
 
-                if (!_c3) {
-                  o = 0, s = 0, r.length = 0;
-                  break;
-                }
+            for (let t = 0, n = a.length; t < n; t += 1) {
+              const n = a[t],
+                    {
+                isMatch: c,
+                indices: l,
+                score: h
+              } = n.search(e);
 
-                if (s += 1, o += _h, i) {
-                  var _e11 = _n13.constructor.type;
-                  M.has(_e11) ? r = [].concat(_toConsumableArray(r), _toConsumableArray(_l)) : r.push(_l);
-                }
+              if (!c) {
+                o = 0, s = 0, r.length = 0;
+                break;
               }
 
-              if (s) {
-                var _e12 = {
-                  isMatch: !0,
-                  score: o / s
-                };
-                return i && (_e12.indices = r), _e12;
+              if (s += 1, o += h, i) {
+                const e = n.constructor.type;
+                M.has(e) ? r = [...r, ...l] : r.push(l);
               }
             }
 
-            return {
-              isMatch: !1,
-              score: 1
-            };
+            if (s) {
+              let e = {
+                isMatch: !0,
+                score: o / s
+              };
+              return i && (e.indices = r), e;
+            }
           }
-        }], [{
-          key: "condition",
-          value: function condition(e, t) {
-            return t.useExtendedSearch;
-          }
-        }]);
 
-        return _class7;
-      }());
+          return {
+            isMatch: !1,
+            score: 1
+          };
+        }
+
+      });
     },
-    857: function _(e, t, i) {
+    857: function (e, t, i) {
       function n(e, t, i) {
         return t in e ? Object.defineProperty(e, t, {
           value: i,
@@ -4073,44 +3778,42 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       }
 
       i.r(t), i.d(t, {
-        __DO_NOT_USE__ActionTypes: function __DO_NOT_USE__ActionTypes() {
+        __DO_NOT_USE__ActionTypes: function () {
           return l;
         },
-        applyMiddleware: function applyMiddleware() {
+        applyMiddleware: function () {
           return v;
         },
-        bindActionCreators: function bindActionCreators() {
+        bindActionCreators: function () {
           return f;
         },
-        combineReducers: function combineReducers() {
+        combineReducers: function () {
           return d;
         },
-        compose: function compose() {
+        compose: function () {
           return m;
         },
-        createStore: function createStore() {
+        createStore: function () {
           return u;
         }
       });
 
       var a = "function" == typeof Symbol && Symbol.observable || "@@observable",
-          c = function c() {
+          c = function () {
         return Math.random().toString(36).substring(7).split("").join(".");
       },
           l = {
         INIT: "@@redux/INIT" + c(),
         REPLACE: "@@redux/REPLACE" + c(),
-        PROBE_UNKNOWN_ACTION: function PROBE_UNKNOWN_ACTION() {
+        PROBE_UNKNOWN_ACTION: function () {
           return "@@redux/PROBE_UNKNOWN_ACTION" + c();
         }
       };
 
       function h(e) {
-        if ("object" != _typeof(e) || null === e) return !1;
+        if ("object" != typeof e || null === e) return !1;
 
-        for (var t = e; null !== Object.getPrototypeOf(t);) {
-          t = Object.getPrototypeOf(t);
-        }
+        for (var t = e; null !== Object.getPrototypeOf(t);) t = Object.getPrototypeOf(t);
 
         return Object.getPrototypeOf(e) === t;
       }
@@ -4165,9 +3868,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
             p = !1;
           }
 
-          for (var t = c = d, i = 0; i < t.length; i++) {
-            (0, t[i])();
-          }
+          for (var t = c = d, i = 0; i < t.length; i++) (0, t[i])();
 
           return e;
         }
@@ -4183,8 +3884,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
           var e,
               t = v;
           return (e = {
-            subscribe: function subscribe(e) {
-              if ("object" != _typeof(e) || null === e) throw new Error(o(11));
+            subscribe: function (e) {
+              if ("object" != typeof e || null === e) throw new Error(o(11));
 
               function i() {
                 e.next && e.next(m());
@@ -4258,7 +3959,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 
       function f(e, t) {
         if ("function" == typeof e) return p(e, t);
-        if ("object" != _typeof(e) || null === e) throw new Error(o(16));
+        if ("object" != typeof e || null === e) throw new Error(o(16));
         var i = {};
 
         for (var n in e) {
@@ -4270,9 +3971,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       }
 
       function m() {
-        for (var e = arguments.length, t = new Array(e), i = 0; i < e; i++) {
-          t[i] = arguments[i];
-        }
+        for (var e = arguments.length, t = new Array(e), i = 0; i < e; i++) t[i] = arguments[i];
 
         return 0 === t.length ? function (e) {
           return e;
@@ -4284,19 +3983,17 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       }
 
       function v() {
-        for (var e = arguments.length, t = new Array(e), i = 0; i < e; i++) {
-          t[i] = arguments[i];
-        }
+        for (var e = arguments.length, t = new Array(e), i = 0; i < e; i++) t[i] = arguments[i];
 
         return function (e) {
           return function () {
             var i = e.apply(void 0, arguments),
-                n = function n() {
+                n = function () {
               throw new Error(o(15));
             },
                 s = {
               getState: i.getState,
-              dispatch: function dispatch() {
+              dispatch: function () {
                 return n.apply(void 0, arguments);
               }
             },
@@ -4333,12 +4030,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       a: t
     }), t;
   }, i.d = function (e, t) {
-    for (var n in t) {
-      i.o(t, n) && !i.o(e, n) && Object.defineProperty(e, n, {
-        enumerable: !0,
-        get: t[n]
-      });
-    }
+    for (var n in t) i.o(t, n) && !i.o(e, n) && Object.defineProperty(e, n, {
+      enumerable: !0,
+      get: t[n]
+    });
   }, i.o = function (e, t) {
     return Object.prototype.hasOwnProperty.call(e, t);
   }, i.r = function (e) {
@@ -4767,7 +4462,7 @@ function scrollFunction() {
 } // Swiper for home page
 
 
-var swiper = new Swiper(".members__slider", {
+const swiper = new Swiper(".members__slider", {
   loop: true,
   slidesPerView: 3,
   spaceBetween: 30,
@@ -4794,7 +4489,7 @@ var swiper = new Swiper(".members__slider", {
     }
   }
 });
-var swiperTeacher = new Swiper(".teacher__slider", {
+const swiperTeacher = new Swiper(".teacher__slider", {
   //loop: true,
   slidesPerView: 4,
   spaceBetween: 30,
@@ -4807,7 +4502,7 @@ var swiperTeacher = new Swiper(".teacher__slider", {
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 30
+      spaceBetween: 10
     },
     400: {
       slidesPerView: 2,
@@ -4827,7 +4522,7 @@ var swiperTeacher = new Swiper(".teacher__slider", {
 }); // Input mask for credit card
 
 if (document.querySelectorAll('.cc-number-input').length > 0) {
-  var ccNumberInput = document.querySelector('.cc-number-input'),
+  let ccNumberInput = document.querySelector('.cc-number-input'),
       ccNumberPattern = /^\d{0,16}$/g,
       ccNumberSeparator = " ",
       ccNumberInputOldValue,
@@ -4839,32 +4534,28 @@ if (document.querySelectorAll('.cc-number-input').length > 0) {
       ccExpiryInputOldCursor,
       ccCVCInput = document.querySelector('.cc-cvc-input'),
       ccCVCPattern = /^\d{0,3}$/g,
-      mask = function mask(value, limit, separator) {
+      mask = (value, limit, separator) => {
     var output = [];
 
-    for (var _i = 0; _i < value.length; _i++) {
-      if (_i !== 0 && _i % limit === 0) {
+    for (let i = 0; i < value.length; i++) {
+      if (i !== 0 && i % limit === 0) {
         output.push(separator);
       }
 
-      output.push(value[_i]);
+      output.push(value[i]);
     }
 
     return output.join("");
   },
-      unmask = function unmask(value) {
-    return value.replace(/[^\d]/g, '');
-  },
-      checkSeparator = function checkSeparator(position, interval) {
-    return Math.floor(position / (interval + 1));
-  },
-      ccNumberInputKeyDownHandler = function ccNumberInputKeyDownHandler(e) {
-    var el = e.target;
+      unmask = value => value.replace(/[^\d]/g, ''),
+      checkSeparator = (position, interval) => Math.floor(position / (interval + 1)),
+      ccNumberInputKeyDownHandler = e => {
+    let el = e.target;
     ccNumberInputOldValue = el.value;
     ccNumberInputOldCursor = el.selectionEnd;
   },
-      ccNumberInputInputHandler = function ccNumberInputInputHandler(e) {
-    var el = e.target,
+      ccNumberInputInputHandler = e => {
+    let el = e.target,
         newValue = unmask(el.value),
         newCursorPosition;
 
@@ -4880,8 +4571,8 @@ if (document.querySelectorAll('.cc-number-input').length > 0) {
     el.setSelectionRange(newCursorPosition, newCursorPosition);
     highlightCC(el.value);
   },
-      highlightCC = function highlightCC(ccValue) {
-    var ccCardType = '',
+      highlightCC = ccValue => {
+    let ccCardType = '',
         ccCardTypePatterns = {
       amex: /^3/,
       visa: /^4/,
@@ -4890,25 +4581,25 @@ if (document.querySelectorAll('.cc-number-input').length > 0) {
       genric: /(^1|^2|^7|^8|^9|^0)/
     };
 
-    for (var cardType in ccCardTypePatterns) {
+    for (const cardType in ccCardTypePatterns) {
       if (ccCardTypePatterns[cardType].test(ccValue)) {
         ccCardType = cardType;
         break;
       }
     }
 
-    var activeCC = document.querySelector('.cc-types__img--active'),
+    let activeCC = document.querySelector('.cc-types__img--active'),
         newActiveCC = document.querySelector(".cc-types__img--".concat(ccCardType));
     if (activeCC) activeCC.classList.remove('cc-types__img--active');
     if (newActiveCC) newActiveCC.classList.add('cc-types__img--active');
   },
-      ccExpiryInputKeyDownHandler = function ccExpiryInputKeyDownHandler(e) {
-    var el = e.target;
+      ccExpiryInputKeyDownHandler = e => {
+    let el = e.target;
     ccExpiryInputOldValue = el.value;
     ccExpiryInputOldCursor = el.selectionEnd;
   },
-      ccExpiryInputInputHandler = function ccExpiryInputInputHandler(e) {
-    var el = e.target,
+      ccExpiryInputInputHandler = e => {
+    let el = e.target,
         newValue = el.value;
     newValue = unmask(newValue);
 
@@ -4928,9 +4619,9 @@ if (document.querySelectorAll('.cc-number-input').length > 0) {
 
 
 if (document.querySelectorAll('.header-profile__prof').length > 0) {
-  var userName = document.querySelector('.header-profile__prof'),
+  let userName = document.querySelector('.header-profile__prof'),
       submenu = document.querySelector('.header-profile__list');
-  userName.addEventListener('click', function () {
+  userName.addEventListener('click', () => {
     submenu.classList.toggle('open');
     userName.classList.toggle('open');
   });
@@ -4938,30 +4629,30 @@ if (document.querySelectorAll('.header-profile__prof').length > 0) {
 
 
 if (document.querySelectorAll('.tabs__header').length > 0) {
-  var tabs = document.querySelectorAll('.tabs__header'),
+  let tabs = document.querySelectorAll('.tabs__header'),
       tabsItem = document.querySelectorAll('.tabs__item'),
       tabsInfo = document.querySelectorAll('.tabs__info'); //tabs.addEventListener('click', fTabs);
 
-  for (var _i2 = 0; tabs.length > _i2; _i2++) {
-    tabs[_i2].addEventListener('click', fTabs);
+  for (let i = 0; tabs.length > i; i++) {
+    tabs[i].addEventListener('click', fTabs);
   }
 
   function fTabs(event) {
     if (event.target.className == "tabs__item") {
       //let dataTab = event.target.getAttribute('data-tab');
-      var currentDataTab = event.target.dataset.tab; //console.log(currentDataTab);
+      let currentDataTab = event.target.dataset.tab; //console.log(currentDataTab);
 
-      for (var _i3 = 0; _i3 < tabsItem.length; _i3++) {
-        tabsItem[_i3].classList.remove('active');
+      for (let i = 0; i < tabsItem.length; i++) {
+        tabsItem[i].classList.remove('active');
       }
 
       event.target.classList.add('active');
 
-      for (var _i4 = 0; _i4 < tabsInfo.length; _i4++) {
-        if (currentDataTab == _i4) {
-          tabsInfo[_i4].classList.add('active');
+      for (let i = 0; i < tabsInfo.length; i++) {
+        if (currentDataTab == i) {
+          tabsInfo[i].classList.add('active');
         } else {
-          tabsInfo[_i4].classList.remove('active');
+          tabsInfo[i].classList.remove('active');
         }
       }
     }
@@ -4970,12 +4661,12 @@ if (document.querySelectorAll('.tabs__header').length > 0) {
 
 
 if (document.querySelectorAll('.accordion__list').length > 0) {
-  var accordions = document.querySelectorAll('.accordion__list');
-  accordions.forEach(function (el) {
-    el.addEventListener('click', function (e) {
-      var self = e.currentTarget;
-      var control = self.querySelector('.accordion__content'),
-          icon = self.querySelector('.accordion__icon');
+  const accordions = document.querySelectorAll('.accordion__list');
+  accordions.forEach(el => {
+    el.addEventListener('click', e => {
+      const self = e.currentTarget;
+      const control = self.querySelector('.accordion__content'),
+            icon = self.querySelector('.accordion__icon');
       control.classList.toggle('open');
       icon.classList.toggle('open');
 
@@ -4990,10 +4681,10 @@ if (document.querySelectorAll('.accordion__list').length > 0) {
 
 
 if (document.querySelectorAll('.filter__select').length > 0) {
-  var defaultSelect = function defaultSelect() {
-    var element = document.querySelectorAll('.filter__select');
-    element.forEach(function (el) {
-      var choices = new Choices(el, {
+  const defaultSelect = () => {
+    const element = document.querySelectorAll('.filter__select');
+    element.forEach(el => {
+      const choices = new Choices(el, {
         searchEnabled: false,
         itemSelectText: '',
         shouldSort: false,
@@ -5015,35 +4706,31 @@ if (document.querySelectorAll('.teacher__slider').length > 0) {
 
 
 if (document.querySelectorAll('.box').length > 0) {
-  var i;
+  const filterBox = document.querySelectorAll('.box');
+  document.querySelector('.nav-filter').addEventListener('click', event => {
+    if (event.target.tagName !== 'LI') return false;
+    let filterClass = event.target.dataset['f'];
+    filterBox.forEach(elem => {
+      elem.classList.remove('hide');
 
-  (function () {
-    var filterBox = document.querySelectorAll('.box');
-    document.querySelector('.nav-filter').addEventListener('click', function (event) {
-      if (event.target.tagName !== 'LI') return false;
-      var filterClass = event.target.dataset['f'];
-      filterBox.forEach(function (elem) {
-        elem.classList.remove('hide');
-
-        if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
-          elem.classList.add('hide');
-        }
-      });
+      if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
+        elem.classList.add('hide');
+      }
     });
-    var btnContainer = document.querySelector('.nav-list-filter');
-    var items = btnContainer.querySelectorAll('li');
+  });
+  const btnContainer = document.querySelector('.nav-list-filter');
+  let items = btnContainer.querySelectorAll('li');
 
-    for (i = 0; i < items.length; i++) {
-      items[i].addEventListener("click", function (e) {
-        if (!e.target.classList.contains('active')) {
-          items.forEach(function (elem) {
-            elem.classList.remove('active');
-          });
-          e.target.classList.add('active');
-        } else {}
-      });
-    }
-  })();
+  for (var i = 0; i < items.length; i++) {
+    items[i].addEventListener("click", function (e) {
+      if (!e.target.classList.contains('active')) {
+        items.forEach(elem => {
+          elem.classList.remove('active');
+        });
+        e.target.classList.add('active');
+      } else {}
+    });
+  }
 }
 })();
 

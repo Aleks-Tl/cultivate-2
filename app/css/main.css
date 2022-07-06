@@ -744,7 +744,7 @@ a {
 .header-profile__list {
   position: absolute;
   top: 110%;
-  left: 0;
+  left: -50px;
   background: var(--whiteColor);
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -1187,11 +1187,18 @@ a {
   }
 }
 .teacher .swiper-wrapper {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
   padding-bottom: 65px;
   padding-top: 15px;
+}
+@media (max-width: 768px) {
+  .teacher .swiper-wrapper {
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+  }
 }
 @media (max-width: 576px) {
   .teacher .swiper-wrapper {
@@ -1199,12 +1206,10 @@ a {
     padding-bottom: 0;
   }
 }
-@media (max-width: 400px) {
-  .teacher .swiper-wrapper {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
+.teacher .swiper-wrapper.center {
+  -webkit-box-pack: start !important;
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
 }
 .teacher .swiper-pagination-bullet {
   width: 40px;
@@ -2141,6 +2146,7 @@ a {
 .contact__form {
   width: 545px;
   margin-top: 55px;
+  margin-bottom: 50px;
 }
 .create__form input,
 .signin__form input,
@@ -2444,6 +2450,16 @@ a {
 .signin__item {
   overflow: hidden;
   width: 50%;
+}
+@media (max-width: 1400px) {
+  .signin__item_form {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 1200px) {
+  .signin__item_form {
+    padding-left: 0px;
+  }
 }
 .signin .signin__item_form {
   width: 545px;

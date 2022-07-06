@@ -4698,9 +4698,13 @@ if (document.querySelectorAll('.filter__select').length > 0) {
 
 if (document.querySelectorAll('.teacher__slider').length > 0) {
   if (document.querySelectorAll('.teacher__slider .swiper-slide').length <= 4) {
-    document.querySelector('.teacher__slider .swiper-wrapper').style.justifyContent = 'center';
-  } else {
-    document.querySelector('.teacher__slider .swiper-wrapper').style.justifyContent = 'flex-start';
+    let clienWidth = document.body.clientWidth;
+
+    if (clienWidth >= 576) {
+      document.querySelector('.teacher__slider .swiper-wrapper').style.justifyContent = 'flex-start';
+    } else {
+      document.querySelector('.teacher__slider .swiper-wrapper').style.justifyContent = 'flex-start';
+    }
   }
 } // Filter
 

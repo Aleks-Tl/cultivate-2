@@ -266,33 +266,55 @@ if (document.querySelectorAll('.accordion__list').length > 0) {
 }
 
 
-// Choices select
+// Filter
 
 if (document.querySelectorAll('.filter__select').length > 0) {
+  let select = function () {
+    let selectHeader = document.querySelectorAll('.select__header');
+    let selectItem = document.querySelectorAll('.select__item');
+
+    selectHeader.forEach(item => {
+      item.addEventListener('click', selectToggle);
+    });
+
+    selectItem.forEach(item => {
+      item.addEventListener('click', selectChoose);
+    });
+
+    function selectToggle() {
+      this.parentElement.classList.toggle('is-active');
+    }
+
+    function selectChoose() {
+      let text = this.innerText,
+        select = this.closest('.filter__select'),
+        currentText = select.querySelector('.select__current');
+      currentText.innerText = text;
+      select.classList.remove('is-active');
+    }
+  }
+
+  select();
+}
+// Choices select
+
+/* if (document.querySelectorAll('.filter__select').length > 0) {
 
   const defaultSelect = () => {
-    const element = document.querySelectorAll('.filter__select');
+    const element = document.querySelectorAll('#select-duration');
     element.forEach(el => {
       const choices = new Choices(el, {
         searchEnabled: false,
         itemSelectText: '',
         shouldSort: false,
         shouldSortItems: false,
-        //addItems: false,
-        //removeItems: false,
-        //allowHTML: false,
-        duplicateItemsAllowed: false,
-        paste: false,
-        searchEnabled: false,
-        searchChoices: false,
-        resetScrollPosition: false,
       });
     })
 
   }
 
   defaultSelect();
-}
+} */
 
 
 

@@ -2789,7 +2789,6 @@ a {
   align-items: center;
 }
 .filter__item span {
-  margin-bottom: 4px;
   display: inline-block;
 }
 .filter__item label {
@@ -2882,6 +2881,56 @@ a {
 @media (max-width: 480px) {
   .filter__select {
     font-size: 8px;
+  }
+}
+.filter .filter__select.is-active .select__body {
+  display: block;
+}
+.filter .select__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 70px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+.filter .select__current {
+  padding: 4px;
+}
+.filter .select__body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background-color: var(--whiteColor);
+  z-index: 5;
+  display: none;
+}
+.filter .select__item {
+  padding: 4px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.filter .select__item:hover {
+  background-color: rgb(232, 228, 228);
+}
+@media (max-width: 480px) {
+  .filter .bird-lg {
+    display: none;
+  }
+}
+.filter .bird-sm {
+  display: none;
+}
+@media (max-width: 480px) {
+  .filter .bird-sm {
+    display: block;
   }
 }
 

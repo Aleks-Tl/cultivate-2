@@ -2451,7 +2451,7 @@ a {
   overflow: hidden;
   width: 50%;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1450px) {
   .signin__item_form {
     padding-left: 15px;
   }

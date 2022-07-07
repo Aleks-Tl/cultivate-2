@@ -278,6 +278,14 @@ if (document.querySelectorAll('.filter__select').length > 0) {
         itemSelectText: '',
         shouldSort: false,
         shouldSortItems: false,
+        //addItems: false,
+        //removeItems: false,
+        //allowHTML: false,
+        duplicateItemsAllowed: false,
+        paste: false,
+        searchEnabled: false,
+        searchChoices: false,
+        resetScrollPosition: false,
       });
     })
 

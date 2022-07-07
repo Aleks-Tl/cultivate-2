@@ -4688,7 +4688,15 @@ if (document.querySelectorAll('.filter__select').length > 0) {
         searchEnabled: false,
         itemSelectText: '',
         shouldSort: false,
-        shouldSortItems: false
+        shouldSortItems: false,
+        //addItems: false,
+        //removeItems: false,
+        //allowHTML: false,
+        duplicateItemsAllowed: false,
+        paste: false,
+        searchEnabled: false,
+        searchChoices: false,
+        resetScrollPosition: false
       });
     });
   };

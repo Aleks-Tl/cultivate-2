@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <section class="payment">
+      <div class="container">
+        <div class="payment__wrap">
+          <div class="free-trial">
+            <div class="free-trial__suptitle">Try cultivate membership</div>
+            <h1 class="free-trial__title">free 7-day trial</h1>
+            <div class="free-trial__subtitle">then 129.99/year</div>
+            <div class="free-trial__info">
+              <div class="cultivate-membership__name">Cultivate Membership</div>
+              <div class="cultivate-membership__val">7-day free</div>
+            </div>
+            <div class="free-trial__info">
+              <div class="sub-total__name">Sub-Total</div>
+              <div class="sub-total__val">$129.99</div>
+            </div>
+            <div class="free-trial__info font-ligth free">
+              <div class="free__name">Free</div>
+              <div class="free__val">$0.00</div>
+            </div>
+            <div class="free-trial__info font-ligth">
+              <div class="total-after-free-trial__name">Total after free trial</div>
+              <div class="total-after-free-trial__val">$129.99</div>
+            </div>
+            <div class="free-trial__info">
+              <div class="total-payment-now__name">Total payment now</div>
+              <div class="total-payment-now__val">$0.00</div>
+            </div>
+          </div>
+          <div class="payment-details">
+            <form action="#">
+              <div class="payment-details__title">payment details</div>
+              <label for="email">EMAIL
+                <input id="email" type="email" name="email" value="Christine@gmail.com" placeholder="Your email"
+                  required>
+              </label>
+              <label for="cc-number-input">card number
+                <input type="text" maxlength="19" class="cc-number-input card" id="cc-number-input"
+                  value="**** **** **** 4114" placeholder="**** **** **** 4114">
+              </label>
+              <div class="profile__wrapper">
+                <label for="cc-expiry-input">expiration date
+                  <input type="text" maxlength="5" class="cc-expiry-input" id="cc-expiry-input" value="10 / 25"
+                    placeholder="10 / 25">
+                </label>
+                <label for="cc-cvc-input">CVV/CVC
+                  <input type="text" maxlength="3" id="cc-cvc-input" class="cc-cvc-input" placeholder="***">
+                </label>
+                <!-- <label for=""></label> -->
+              </div>
+              <label for="name">Cardholder name
+                <input id="cardholder" type="text" name="cardholder" value="Christine McDonough" placeholder="Your name"
+                  required>
+              </label>
+              <label for="name">country
+                <div class="country">
+                  <select name="country" id="country">
+                    <option value="ukraine" selected>Ukraine</option>
+                    <option value="poland">Poland</option>
+                    <option value="germany">Germany</option>
+                    <option value="england">England</option>
+                    <option value="italy">Italy</option>
+                  </select>
+                </div>
+              </label>
+              <input type="submit" class="payment__btn btn-outline btn-reset" value="start free-trial">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @include('partials/footer.html')
+</body>
+
+</html>

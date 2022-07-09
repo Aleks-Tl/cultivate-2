@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <section class="membership">
+      <div class="container">
+        <div class="membership__wrap">
+          <h1 class="membership__title title">Membership</h1>
+          <form action="#" class="membership__form" id="membership">
+            <div class="membership__prices radio">
+              <div class="label__wrap">
+                <input type="radio" name="price" value="monthly" id="monthly">
+                <label for="monthly" class="radio-label"></label>
+              </div>
+              <div class="membership__pricess">
+                <div class="membership__month">MONTHLY</div>
+                <div class="membership__price">$12.99<br>
+                  <span>/month</span>
+                </div>
+              </div>
+              <ul class="membership__list">
+                <li>Lorem ipsum dolor sit amet </li>
+                <li>Consectetur adipiscing elit</li>
+                <li>In facilisis laoreet quam non</li>
+                <li>Vestibulum eget ultrices magna</li>
+              </ul>
+            </div>
+            <div class="membership__prices radio">
+              <div class="label__wrap">
+                <input type="radio" name="price" value="year" id="year" checked>
+                <label for="year" class="radio-label"></label>
+              </div>
+              <div class="membership__pricess">
+                <div class="membership__month">ANNUAL</div>
+                <div class="membership__price">$129.99<br>
+                  <span>/year</span>
+                </div>
+              </div>
+              <ul class="membership__list">
+                <li>Vestibulum tellus</li>
+                <li>Nam non risus accumsan</li>
+                <li>Mauris dui neque, luctus eu tortor</li>
+                <li>Proin tortor ipsum</li>
+              </ul>
+            </div>
+            <div class="membership__wrapper">
+              <label for="promocode" class="membership__promocode">Have a promo code
+                <input id="promocode" type="text" name="promocode" placeholder="Enter your promo code">
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="custom-checkbox__field">
+                <span class="custom-checkbox__content"></span>I accept the
+                <a href="terms.html" target="_blank">Terms and Conditions</a>
+              </label>
+              <input type="submit" class="btn-reset btn-outline membership__btn" value="continue">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    @include('partials/footer.html')
+</body>
+
+</html>

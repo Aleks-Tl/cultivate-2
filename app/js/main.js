@@ -719,7 +719,7 @@ Reference: http://jsfiddle.net/BB3JK/47/
 */
 
 
-$('select').each(function () {
+$('.filter__select').each(function () {
   var $this = $(this),
       numberOfOptions = $(this).children('option').length;
   $this.addClass('select-hidden');

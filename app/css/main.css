@@ -5140,8 +5140,8 @@ a {
 }
 @media (max-width: 650px) {
   .membership__prices {
-    -ms-grid-columns: 35% 65%;
-    grid-template-columns: 35% 65%;
+    -ms-grid-columns: 33% 67%;
+    grid-template-columns: 33% 67%;
   }
 }
 @media (max-width: 576px) {
@@ -5154,8 +5154,8 @@ a {
 @media (max-width: 400px) {
   .membership__prices {
     padding: 20px 10px;
-    -ms-grid-columns: 20% 80%;
-    grid-template-columns: 20% 80%;
+    -ms-grid-columns: 25% 75%;
+    grid-template-columns: 25% 75%;
   }
 }
 .membership__price {
@@ -5216,7 +5216,7 @@ a {
 }
 .membership__list > li {
   padding-left: 20px;
-  background-image: url(../img/bird-join.png);
+  background-image: url("../img/bird-join.png");
   background-size: 14px 15px;
   background-repeat: no-repeat;
   background-position: left top;
@@ -5371,7 +5371,7 @@ a {
 .payment {
   padding-top: 220px;
   padding-bottom: 200px;
-  background-color: #E5E5E5;
+  background-color: var(--lightGray);
 }
 @media (max-width: 992px) {
   .payment {
@@ -5627,6 +5627,7 @@ a {
   outline: none;
   border: none;
   border-bottom: 1px solid #cccccc;
+  background-color: transparent;
 }
 .payment .country select option {
   font-size: 14px;

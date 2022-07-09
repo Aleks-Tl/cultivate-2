@@ -2183,12 +2183,11 @@
       text-transform: uppercase;
       float: right;
       margin-right: 5px;
-      @media (max-width: 576px) {
-        font-size: 11px;
+      margin-bottom: 10px;
+      @media (max-width: 600px) {
+        font-size: 0px;
       }
-      @media (max-width: 576px) {
-        font-size: 0;
-      }
+
     }
   }
 
@@ -4827,7 +4826,96 @@
 }
 
 
+// Filter
 
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  color: var(--primary);
+  min-width: 100px;
+  height: 30px;
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  @media (max-width: 576px) {
+    min-width: 65px;
+    font-size: 11px;
+  }
+  @media (max-width: 480px) {
+    font-size: 8px;
+  }
+}
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  &:after {
+    content:"";
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-color: var(--primary) transparent transparent transparent;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    @media (max-width: 480px) {
+      border: 3px solid transparent;
+      border-color: var(--primary) transparent transparent transparent;
+      top: 8px;
+    }
+  }
+  /* &:hover {
+    background-color: transparent;
+  } */
+  &:active, &.active {
+    background-color: white;
+    &:after {
+      top: 1px;
+      border-color: transparent transparent var(--primary) transparent;
+      @media (max-width: 480px) {
+        top: 5px;
+      }
+    }
+  }
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: white;
+  li {
+    margin: 0;
+    padding: 8px 0 8px 8px;
+    font-size: 12px;
+    //border-top: 1px solid rgb(20, 149, 18);
+    &:hover,
+    &.is-selected {
+      color: var(--primary);
+      background: #cccccc;
+    }
+    @media (max-width: 576px) {
+      min-width: 65px;
+      font-size: 10px;
+    }
+    @media (max-width: 480px) {
+      padding: 4px 0 4px 4px;
+      font-size: 8px;
+    }
+  }
+}
 
 
 

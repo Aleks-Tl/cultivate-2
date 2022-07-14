@@ -2747,94 +2747,94 @@
     }
   }
 
-  .locked {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    // .locked__block
 
-    &__block {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      margin-bottom: 20px;
-      @media (max-width: 992px) {
-        gap: 20px;
+}
+.locked {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  // .locked__block
+
+  &__block {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    @media (max-width: 992px) {
+      gap: 20px;
+    }
+    @media (max-width: 768px) {
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 576px) {
+      flex-direction: column;
+      gap: 0px;
+      margin-bottom: 5px;
+    }
+  }
+
+  // .locked__img
+
+  &__img {
+    @media (max-width: 1250px) {
+      img {
+        max-width: 80%;
       }
-      @media (max-width: 768px) {
-        gap: 10px;
-        margin-bottom: 10px;
+    }
+    @media (max-width: 768px) {
+      img {
+        max-width: 70%;
       }
-      @media (max-width: 576px) {
-        flex-direction: column;
-        gap: 0px;
+    }
+    @media (max-width: 576px) {
+      img {
+        max-width: 50%;
         margin-bottom: 5px;
       }
     }
+  }
 
-    // .locked__img
+  // .locked__title
 
-    &__img {
-      @media (max-width: 1250px) {
-        img {
-          max-width: 80%;
-        }
-      }
-      @media (max-width: 768px) {
-        img {
-          max-width: 70%;
-        }
-      }
-      @media (max-width: 576px) {
-        img {
-          max-width: 50%;
-          margin-bottom: 5px;
-        }
-      }
+  &__title {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: var(--whiteColor);
+    @media (max-width: 1250px) {
+      font-size: 22px;
+      line-height: 28px;
     }
+    @media (max-width: 768px) {
+      font-size: 17px;
+      line-height: 22px;
+    }
+    @media (max-width: 576px) {
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
 
-    // .locked__title
+  // .locked__btn
 
-    &__title {
-      font-weight: 900;
-      font-size: 30px;
-      line-height: 40px;
-      text-transform: uppercase;
+  &__btn {
+    &:hover {
       color: var(--whiteColor);
-      @media (max-width: 1250px) {
-        font-size: 22px;
-        line-height: 28px;
-      }
-      @media (max-width: 768px) {
-        font-size: 17px;
-        line-height: 22px;
-      }
-      @media (max-width: 576px) {
-        font-size: 11px;
-        line-height: 13px;
-      }
     }
-
-    // .locked__btn
-
-    &__btn {
-      &:hover {
-        color: var(--whiteColor);
-      }
-      @media (max-width: 768px) {
-        padding: 3px 15px;
-        font-size: 13px;
-      }
-      @media (max-width: 576px) {
-        padding: 3px 3px;
-        font-size: 8px;
-      }
+    @media (max-width: 768px) {
+      padding: 3px 15px;
+      font-size: 13px;
+    }
+    @media (max-width: 576px) {
+      padding: 3px 3px;
+      font-size: 8px;
     }
   }
 }
-
 // PAGE SERIES IND
 
 // TABS
@@ -3118,14 +3118,28 @@
   background-color: var(--lightGray);
   // .recipes-ind__wrap
 
+  &-img {
+    position: relative;
+    max-height: 100%;
+    margin-left: -285px;
+    @media (max-width: 1650px) {
+      margin-left: -185px;
+    }
+    @media (max-width: 1200px) {
+      margin-left: 0;
+      align-self: center;
+    }
+  }
   &__wrap {
     display: flex;
     justify-content: space-between;
     @media (max-width: 1200px) {
       flex-direction: column-reverse;
+
     }
     > img {
       //flex: 0 1 50%;
+      //position: relative;
       max-height: 540px;
       margin-left: -285px;
       @media (max-width: 1650px) {
@@ -3150,6 +3164,7 @@
       } */
     }
   }
+
 
   // .recipes-ind__img
 

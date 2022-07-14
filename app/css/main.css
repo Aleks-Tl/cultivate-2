@@ -3431,7 +3431,8 @@ a {
     height: auto;
   }
 }
-.one-class .locked {
+
+.locked {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3440,7 +3441,7 @@ a {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.one-class .locked__block {
+.locked__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3451,18 +3452,18 @@ a {
   margin-bottom: 20px;
 }
 @media (max-width: 992px) {
-  .one-class .locked__block {
+  .locked__block {
     gap: 20px;
   }
 }
 @media (max-width: 768px) {
-  .one-class .locked__block {
+  .locked__block {
     gap: 10px;
     margin-bottom: 10px;
   }
 }
 @media (max-width: 576px) {
-  .one-class .locked__block {
+  .locked__block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -3472,22 +3473,22 @@ a {
   }
 }
 @media (max-width: 1250px) {
-  .one-class .locked__img img {
+  .locked__img img {
     max-width: 80%;
   }
 }
 @media (max-width: 768px) {
-  .one-class .locked__img img {
+  .locked__img img {
     max-width: 70%;
   }
 }
 @media (max-width: 576px) {
-  .one-class .locked__img img {
+  .locked__img img {
     max-width: 50%;
     margin-bottom: 5px;
   }
 }
-.one-class .locked__title {
+.locked__title {
   font-weight: 900;
   font-size: 30px;
   line-height: 40px;
@@ -3495,34 +3496,34 @@ a {
   color: var(--whiteColor);
 }
 @media (max-width: 1250px) {
-  .one-class .locked__title {
+  .locked__title {
     font-size: 22px;
     line-height: 28px;
   }
 }
 @media (max-width: 768px) {
-  .one-class .locked__title {
+  .locked__title {
     font-size: 17px;
     line-height: 22px;
   }
 }
 @media (max-width: 576px) {
-  .one-class .locked__title {
+  .locked__title {
     font-size: 11px;
     line-height: 13px;
   }
 }
-.one-class .locked__btn:hover {
+.locked__btn:hover {
   color: var(--whiteColor);
 }
 @media (max-width: 768px) {
-  .one-class .locked__btn {
+  .locked__btn {
     padding: 3px 15px;
     font-size: 13px;
   }
 }
 @media (max-width: 576px) {
-  .one-class .locked__btn {
+  .locked__btn {
     padding: 3px 3px;
     font-size: 8px;
   }
@@ -3856,6 +3857,24 @@ a {
 .recipes-ind {
   padding-top: 100px;
   background-color: var(--lightGray);
+}
+.recipes-ind-img {
+  position: relative;
+  max-height: 100%;
+  margin-left: -285px;
+}
+@media (max-width: 1650px) {
+  .recipes-ind-img {
+    margin-left: -185px;
+  }
+}
+@media (max-width: 1200px) {
+  .recipes-ind-img {
+    margin-left: 0;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
 }
 .recipes-ind__wrap {
   display: -webkit-box;
